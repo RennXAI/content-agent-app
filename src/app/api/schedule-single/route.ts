@@ -1,6 +1,7 @@
 import { GhlError } from '@/lib/ghl';
 import {
   createSocialPost,
+  extractPostId,
   listSocialAccounts,
   type PostType,
   type SocialAccount,
@@ -77,7 +78,7 @@ export async function POST(request: Request) {
     });
     return Response.json({
       ok: true,
-      ghlPostId: res.results?.id ?? res.results?.postId,
+      ghlPostId: extractPostId(res),
       accountIds: eligible.map((a) => a.id),
     });
   } catch (error) {

@@ -60,7 +60,16 @@ export interface CreatePostResponse {
   success: boolean;
   statusCode: number;
   message?: string;
-  results?: { id?: string; postId?: string; [k: string]: unknown };
+  results?: {
+    post?: { _id?: string; [k: string]: unknown };
+    id?: string;
+    postId?: string;
+    [k: string]: unknown;
+  };
+}
+
+export function extractPostId(res: CreatePostResponse): string | undefined {
+  return res.results?.post?._id ?? res.results?.id ?? res.results?.postId;
 }
 
 export async function createSocialPost(

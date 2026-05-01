@@ -7,6 +7,7 @@ import {
 } from '@/lib/content-calendar';
 import {
   createSocialPost,
+  extractPostId,
   listSocialAccounts,
   type PostType,
   type SocialAccount,
@@ -156,7 +157,7 @@ export async function POST(request: Request) {
           date: post.date,
           format: post.format,
           accountIds: eligible.map((a) => a.id),
-          ghlPostId: res.results?.id ?? res.results?.postId,
+          ghlPostId: extractPostId(res),
         });
       } catch (err) {
         const message =

@@ -1,0 +1,90 @@
+{
+  "locationId": "4JROswe0GvSbITFQsHCa",
+  "userId": "BriXO7ARLDaKp297NzTF",
+  "totalScheduled": 9,
+  "totalSkipped": 21,
+  "skippedReason": "carousels and singles need IG/FB/LinkedIn connected (only TikTok currently linked)",
+  "drafts": [
+    {
+      "day": 2,
+      "date": "2026-05-02",
+      "ghlPostId": "69f4a558e669abec9bd6d2fe",
+      "accountId": "69f49059bceeefd83a56359c_4JROswe0GvSbITFQsHCa_0003QIqNKuJFV0GrCPKbgkZbNUjg4aXcRP_business",
+      "platform": "tiktok",
+      "status": "draft",
+      "format": "reel"
+    },
+    {
+      "day": 5,
+      "date": "2026-05-05",
+      "ghlPostId": "69f4a55832b0e37c54299a27",
+      "accountId": "69f49059bceeefd83a56359c_4JROswe0GvSbITFQsHCa_0003QIqNKuJFV0GrCPKbgkZbNUjg4aXcRP_business",
+      "platform": "tiktok",
+      "status": "draft",
+      "format": "reel"
+    },
+    {
+      "day": 8,
+      "date": "2026-05-08",
+      "ghlPostId": "69f4a55953baf7a830eca0e0",
+      "accountId": "69f49059bceeefd83a56359c_4JROswe0GvSbITFQsHCa_0003QIqNKuJFV0GrCPKbgkZbNUjg4aXcRP_business",
+      "platform": "tiktok",
+      "status": "draft",
+      "format": "reel"
+    },
+    {
+      "day": 11,
+      "date": "2026-05-11",
+      "ghlPostId": "69f4a55ae669abec9bd6d59e",
+      "accountId": "69f49059bceeefd83a56359c_4JROswe0GvSbITFQsHCa_0003QIqNKuJFV0GrCPKbgkZbNUjg4aXcRP_business",
+      "platform": "tiktok",
+      "status": "draft",
+      "format": "reel"
+    },
+    {
+      "day": 14,
+      "date": "2026-05-14",
+      "ghlPostId": "69f4a55a7065f7ef39c72b73",
+      "accountId": "69f49059bceeefd83a56359c_4JROswe0GvSbITFQsHCa_0003QIqNKuJFV0GrCPKbgkZbNUjg4aXcRP_business",
+      "platform": "tiktok",
+      "status": "draft",
+      "format": "reel"
+    },
+    {
+      "day": 17,
+      "date": "2026-05-17",
+      "ghlPostId": "69f4a55b17ba5130e6f3b315",
+      "accountId": "69f49059bceeefd83a56359c_4JROswe0GvSbITFQsHCa_0003QIqNKuJFV0GrCPKbgkZbNUjg4aXcRP_business",
+      "platform": "tiktok",
+      "status": "draft",
+      "format": "reel"
+    },
+    {
+      "day": 20,
+      "date": "2026-05-20",
+      "ghlPostId": "69f4a55b630dfeeff03f4cd4",
+      "accountId": "69f49059bceeefd83a56359c_4JROswe0GvSbITFQsHCa_0003QIqNKuJFV0GrCPKbgkZbNUjg4aXcRP_business",
+      "platform": "tiktok",
+      "status": "draft",
+      "format": "reel"
+    },
+    {
+      "day": 23,
+      "date": "2026-05-23",
+      "ghlPostId": "69f4a55cf8fb3ddd7c433d71",
+      "accountId": "69f49059bceeefd83a56359c_4JROswe0GvSbITFQsHCa_0003QIqNKuJFV0GrCPKbgkZbNUjg4aXcRP_business",
+      "platform": "tiktok",
+      "status": "draft",
+      "format": "reel"
+    },
+    {
+      "day": 26,
+      "date": "2026-05-26",
+      "ghlPostId": "69f4a55c25a7c38b2e2e811f",
+      "accountId": "69f49059bceeefd83a56359c_4JROswe0GvSbITFQsHCa_0003QIqNKuJFV0GrCPKbgkZbNUjg4aXcRP_business",
+      "platform": "tiktok",
+      "status": "draft",
+      "format": "reel"
+    }
+  ]
+}
