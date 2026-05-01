@@ -46,6 +46,7 @@ export interface CreatePostInput {
   type: PostType;
   accountIds: string[];
   summary: string;
+  userId: string;
   status?: PostStatus;
   scheduleDate?: string;
   media?: Array<{ url: string; type?: 'image' | 'video'; caption?: string }>;
@@ -53,7 +54,6 @@ export interface CreatePostInput {
   categoryId?: string;
   followUpComment?: string;
   imageUrl?: string;
-  scheduleTimezone?: string;
 }
 
 export interface CreatePostResponse {

@@ -129,14 +129,27 @@ export async function POST(request: Request) {
         continue;
       }
 
+      const userId = process.env.GHL_USER_ID;
+      if (!userId) {
+        scheduled.push({
+          day: post.day,
+          date: post.date,
+          format: post.format,
+          accountIds: eligible.map((a) => a.id),
+          error:
+            'GHL_USER_ID is not set in env. Required by GHL Social Planner POST.',
+        });
+        continue;
+      }
+
       try {
         const res = await createSocialPost({
           type: postTypeFor(post.format),
           accountIds: eligible.map((a) => a.id),
           summary: postToGhlSummary(post),
+          userId,
           status: 'draft',
           scheduleDate: `${post.date}T16:00:00.000Z`,
-          scheduleTimezone: DEFAULTS.timezone,
         });
         scheduled.push({
           day: post.day,
