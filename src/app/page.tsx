@@ -1,5 +1,5 @@
-import ContentGenerator from '@/components/ContentGenerator';
+import { redirect } from 'next/navigation';
 
 export default function Home() {
-  return <ContentGenerator />;
+  redirect('/manager.html');
 }
