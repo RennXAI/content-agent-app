@@ -1,0 +1,1500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RennXAI — Content Generator & Social Media Manager</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800;900&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy: #0D2B4E;
+    --blue: #206DA8;
+    --teal: #1A6E8A;
+    --light-blue: #B9D1DA;
+    --beige: #E1D9CB;
+    --slate: #D0D4DB;
+    --white: #FFFFFF;
+    --off-white: #F7F8FA;
+    --gray: #8A8F9C;
+    --dark: #1A1F2E;
+    --surface: #F0F3F7;
+    --border: #DDE2EA;
+    --success: #2D7D5A;
+    --error: #C0392B;
+    --shadow: 0 4px 24px rgba(13,43,78,0.10);
+    --shadow-lg: 0 12px 48px rgba(13,43,78,0.16);
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--off-white);
+    color: var(--dark);
+    min-height: 100vh;
+  }
+
+  .layout { display: flex; height: 100vh; overflow: hidden; }
+
+  .sidebar {
+    width: 240px;
+    background: var(--navy);
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    border-right: 1px solid rgba(255,255,255,0.06);
+  }
+
+  .sidebar-logo {
+    padding: 24px 20px 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+  }
+
+  .logo-img {
+    width: 140px;
+    height: auto;
+    filter: brightness(1.1);
+  }
+
+  .sidebar-nav { flex: 1; padding: 16px 0; overflow-y: auto; }
+
+  .nav-label {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    color: rgba(255,255,255,0.3);
+    padding: 16px 20px 8px;
+    text-transform: uppercase;
+  }
+
+  .nav-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 0;
+    transition: all 0.15s;
+    font-size: 13.5px;
+    font-weight: 400;
+    color: rgba(255,255,255,0.6);
+    border-left: 3px solid transparent;
+  }
+
+  .nav-item:hover { background: rgba(255,255,255,0.05); color: #fff; }
+  .nav-item.active {
+    background: rgba(32,109,168,0.22);
+    color: #fff;
+    border-left-color: var(--blue);
+    font-weight: 500;
+  }
+
+  .nav-icon { font-size: 16px; width: 20px; text-align: center; }
+
+  .sidebar-bottom {
+    padding: 16px 20px;
+    border-top: 1px solid rgba(255,255,255,0.08);
+  }
+
+  .status-dot {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    color: rgba(255,255,255,0.4);
+  }
+
+  .dot { width: 7px; height: 7px; border-radius: 50%; background: #2ecc71; animation: pulse 2s infinite; }
+  @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.4} }
+
+  .main { flex: 1; display: flex; flex-direction: column; overflow: hidden; }
+
+  .topbar {
+    background: var(--white);
+    border-bottom: 1px solid var(--border);
+    padding: 0 32px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-shrink: 0;
+  }
+
+  .topbar-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--navy);
+  }
+
+  .topbar-right { display: flex; align-items: center; gap: 12px; }
+
+  .platform-badge {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 11.5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.15s;
+    border: 1.5px solid transparent;
+  }
+  .platform-badge.meta { background: #E7F0FB; color: #1877F2; border-color: #1877F2; }
+  .platform-badge.tiktok { background: #FDE8ED; color: #010101; border-color: #010101; }
+  .platform-badge.connected { opacity: 1; }
+  .platform-badge.disconnected { opacity: 0.4; border-style: dashed; }
+
+  .content-area { flex: 1; overflow-y: auto; padding: 28px 32px; }
+
+  .tabs {
+    display: flex;
+    gap: 4px;
+    background: var(--surface);
+    border-radius: 10px;
+    padding: 4px;
+    margin-bottom: 28px;
+    width: fit-content;
+  }
+
+  .tab {
+    padding: 8px 20px;
+    border-radius: 7px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12.5px;
+    font-weight: 600;
+    cursor: pointer;
+    color: var(--gray);
+    transition: all 0.15s;
+    letter-spacing: 0.02em;
+  }
+
+  .tab.active {
+    background: var(--white);
+    color: var(--navy);
+    box-shadow: var(--shadow);
+  }
+
+  .panel { display: none; }
+  .panel.active { display: block; }
+
+  .gen-grid {
+    display: grid;
+    grid-template-columns: 1fr 380px;
+    gap: 24px;
+    align-items: start;
+  }
+
+  .card {
+    background: var(--white);
+    border-radius: 14px;
+    box-shadow: var(--shadow);
+    overflow: hidden;
+  }
+
+  .card-header {
+    padding: 18px 24px;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .card-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--navy);
+    letter-spacing: 0.02em;
+  }
+
+  .card-body { padding: 20px 24px; }
+
+  label {
+    display: block;
+    font-size: 11.5px;
+    font-weight: 600;
+    color: var(--gray);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+  }
+
+  input, textarea, select {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1.5px solid var(--border);
+    border-radius: 8px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 13.5px;
+    color: var(--dark);
+    background: var(--white);
+    transition: border-color 0.15s;
+    outline: none;
+    margin-bottom: 16px;
+  }
+
+  input:focus, textarea:focus, select:focus { border-color: var(--blue); }
+  textarea { resize: vertical; min-height: 80px; }
+
+  .field-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 11px 22px;
+    border-radius: 9px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12.5px;
+    font-weight: 700;
+    cursor: pointer;
+    border: none;
+    transition: all 0.15s;
+    letter-spacing: 0.03em;
+  }
+
+  .btn-primary { background: var(--blue); color: #fff; }
+  .btn-primary:hover { background: #185a8c; transform: translateY(-1px); box-shadow: 0 6px 20px rgba(32,109,168,0.3); }
+  .btn-navy { background: var(--navy); color: #fff; }
+  .btn-navy:hover { background: #0a1f38; }
+  .btn-outline { background: transparent; border: 1.5px solid var(--border); color: var(--dark); }
+  .btn-outline:hover { border-color: var(--blue); color: var(--blue); }
+  .btn-sm { padding: 7px 14px; font-size: 11.5px; }
+  .btn-block { width: 100%; }
+
+  .btn:disabled { opacity: 0.4; cursor: not-allowed; transform: none; }
+
+  .pillar-grid { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px; }
+
+  .pillar-chip {
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 11.5px;
+    font-weight: 600;
+    cursor: pointer;
+    border: 1.5px solid var(--border);
+    color: var(--gray);
+    transition: all 0.15s;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .pillar-chip.selected {
+    border-color: var(--blue);
+    color: var(--blue);
+    background: rgba(32,109,168,0.07);
+  }
+
+  .format-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 16px; }
+
+  .format-card {
+    border: 1.5px solid var(--border);
+    border-radius: 10px;
+    padding: 14px;
+    cursor: pointer;
+    transition: all 0.15s;
+    text-align: center;
+  }
+
+  .format-card.selected {
+    border-color: var(--blue);
+    background: rgba(32,109,168,0.05);
+  }
+
+  .format-icon { font-size: 22px; margin-bottom: 6px; }
+  .format-name {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11.5px;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 2px;
+  }
+  .format-desc { font-size: 11px; color: var(--gray); }
+
+  .preview-area {
+    background: var(--surface);
+    border-radius: 12px;
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .preview-placeholder { text-align: center; color: var(--gray); }
+  .preview-placeholder .icon { font-size: 40px; margin-bottom: 10px; }
+  .preview-placeholder p { font-size: 13px; }
+
+  .carousel-preview { width: 100%; padding: 16px; }
+
+  .slide-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 12px;
+  }
+
+  .slide-dot {
+    width: 7px; height: 7px;
+    border-radius: 50%;
+    background: var(--slate);
+    cursor: pointer;
+    transition: all 0.15s;
+  }
+  .slide-dot.active { background: var(--blue); width: 20px; border-radius: 4px; }
+
+  .slide-thumb {
+    background: var(--navy);
+    border-radius: 10px;
+    aspect-ratio: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .slide-thumb::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(32,109,168,0.3) 0%, transparent 60%);
+  }
+
+  .slide-thumb .slide-num {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 9px;
+    font-weight: 700;
+    color: var(--light-blue);
+    letter-spacing: 0.1em;
+    margin-bottom: 8px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .slide-thumb .slide-headline {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 800;
+    color: #fff;
+    line-height: 1.3;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 8px;
+  }
+
+  .slide-thumb .slide-body {
+    font-size: 10px;
+    color: rgba(255,255,255,0.6);
+    line-height: 1.5;
+    position: relative;
+    z-index: 1;
+  }
+
+  .slide-thumb .slide-cta {
+    margin-top: 12px;
+    padding: 5px 14px;
+    background: var(--blue);
+    border-radius: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 9px;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 0.05em;
+    position: relative;
+    z-index: 1;
+  }
+
+  .video-preview {
+    background: #000;
+    border-radius: 10px;
+    aspect-ratio: 9/16;
+    max-height: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+  }
+
+  .video-preview .vp-bg {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(160deg, var(--navy) 0%, #000 100%);
+  }
+
+  .video-preview .vp-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .video-preview .vp-hook {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 900;
+    color: #fff;
+    line-height: 1.2;
+    margin-bottom: 10px;
+  }
+
+  .video-preview .vp-sub { font-size: 10px; color: rgba(255,255,255,0.5); }
+
+  .vp-watermark {
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+    right: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+  }
+
+  .vp-watermark .vp-handle {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    color: rgba(255,255,255,0.6);
+  }
+
+  .vp-watermark .vp-cta-tag {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 9px;
+    font-weight: 700;
+    color: #fff;
+    background: var(--blue);
+    padding: 4px 10px;
+    border-radius: 12px;
+  }
+
+  .sched-grid { display: grid; grid-template-columns: 1fr 340px; gap: 24px; }
+
+  .calendar-week { display: grid; grid-template-columns: repeat(7, 1fr); gap: 6px; margin-bottom: 20px; }
+
+  .cal-day {
+    background: var(--surface);
+    border-radius: 8px;
+    padding: 10px 6px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.15s;
+    border: 1.5px solid transparent;
+  }
+
+  .cal-day:hover { border-color: var(--blue); }
+  .cal-day.today { border-color: var(--blue); background: rgba(32,109,168,0.06); }
+  .cal-day .day-name { font-size: 10px; color: var(--gray); font-weight: 600; letter-spacing: 0.05em; margin-bottom: 4px; }
+  .cal-day .day-num { font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 700; color: var(--navy); }
+  .cal-day .day-posts { font-size: 9px; color: var(--blue); margin-top: 4px; font-weight: 600; }
+
+  .queue-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 16px;
+    border-radius: 10px;
+    background: var(--surface);
+    margin-bottom: 8px;
+    border: 1.5px solid var(--border);
+    cursor: pointer;
+    transition: all 0.15s;
+  }
+
+  .queue-item:hover { border-color: var(--blue); background: var(--white); }
+
+  .queue-platform { font-size: 18px; width: 32px; text-align: center; }
+  .queue-info { flex: 1 }
+  .queue-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 2px;
+  }
+  .queue-meta { font-size: 11px; color: var(--gray); }
+
+  .queue-status {
+    font-size: 10px;
+    font-weight: 700;
+    padding: 3px 10px;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.04em;
+  }
+  .status-scheduled { background: #E8F4FD; color: #1877F2; }
+  .status-draft { background: #FFF3E0; color: #E65100; }
+  .status-posted { background: #E8F5E9; color: #2D7D5A; }
+
+  .analytics-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-bottom: 24px; }
+
+  .stat-card {
+    background: var(--white);
+    border-radius: 12px;
+    padding: 18px 20px;
+    box-shadow: var(--shadow);
+    border-left: 4px solid var(--blue);
+  }
+
+  .stat-label { font-size: 10.5px; color: var(--gray); font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; margin-bottom: 8px; }
+  .stat-value { font-family: 'Montserrat', sans-serif; font-size: 26px; font-weight: 800; color: var(--navy); margin-bottom: 4px; }
+  .stat-delta { font-size: 11px; color: var(--success); font-weight: 600; }
+  .stat-delta.down { color: var(--error); }
+
+  .leads-grid { display: grid; grid-template-columns: 1fr 320px; gap: 24px; }
+
+  .lead-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 16px;
+    border-radius: 10px;
+    border: 1.5px solid var(--border);
+    margin-bottom: 8px;
+    background: var(--white);
+    transition: all 0.15s;
+  }
+
+  .lead-row:hover { border-color: var(--blue); box-shadow: var(--shadow); }
+
+  .lead-avatar {
+    width: 36px; height: 36px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--blue), var(--teal));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    color: #fff;
+    flex-shrink: 0;
+  }
+
+  .lead-info { flex: 1; }
+  .lead-name { font-family: 'Montserrat', sans-serif; font-size: 13px; font-weight: 700; color: var(--navy); margin-bottom: 2px; }
+  .lead-trigger { font-size: 11.5px; color: var(--gray); }
+
+  .lead-score {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 10px;
+    letter-spacing: 0.04em;
+  }
+  .score-hot { background: #FDECEA; color: var(--error); }
+  .score-warm { background: #FFF3E0; color: #E65100; }
+  .score-cold { background: var(--surface); color: var(--gray); }
+
+  .validation-banner {
+    background: linear-gradient(135deg, var(--navy), var(--teal));
+    border-radius: 14px;
+    padding: 20px 24px;
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+  }
+
+  .banner-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    font-weight: 800;
+    margin-bottom: 4px;
+    letter-spacing: 0.03em;
+  }
+
+  .banner-sub { font-size: 12px; opacity: 0.7; }
+
+  .progress-track { flex: 1; margin: 0 24px; }
+
+  .progress-label {
+    display: flex;
+    justify-content: space-between;
+    font-size: 11px;
+    opacity: 0.7;
+    margin-bottom: 6px;
+  }
+
+  .progress-bar {
+    height: 8px;
+    background: rgba(255,255,255,0.15);
+    border-radius: 4px;
+    overflow: hidden;
+  }
+
+  .progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--light-blue), #fff);
+    border-radius: 4px;
+    transition: width 0.5s;
+  }
+
+  .loading-ring {
+    display: inline-block;
+    width: 16px; height: 16px;
+    border: 2px solid rgba(255,255,255,0.3);
+    border-top-color: #fff;
+    border-radius: 50%;
+    animation: spin 0.7s linear infinite;
+  }
+
+  @keyframes spin { to { transform: rotate(360deg); } }
+
+  .generated-content {
+    background: var(--surface);
+    border-radius: 10px;
+    padding: 16px;
+    margin-top: 16px;
+    border: 1.5px solid var(--border);
+  }
+
+  .generated-label {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    color: var(--blue);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+
+  .generated-text {
+    font-size: 13px;
+    color: var(--dark);
+    line-height: 1.65;
+    white-space: pre-wrap;
+  }
+
+  .copy-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--blue);
+    cursor: pointer;
+    margin-top: 10px;
+    padding: 4px 0;
+  }
+
+  .copy-btn:hover { text-decoration: underline; }
+
+  .connect-card {
+    background: var(--white);
+    border-radius: 14px;
+    border: 1.5px solid var(--border);
+    padding: 20px 24px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 12px;
+    box-shadow: var(--shadow);
+  }
+
+  .connect-logo { font-size: 28px; }
+  .connect-info { flex: 1; }
+  .connect-name { font-family: 'Montserrat', sans-serif; font-size: 14px; font-weight: 700; color: var(--navy); margin-bottom: 3px; }
+  .connect-desc { font-size: 12px; color: var(--gray); }
+  .connect-status { font-size: 11px; font-weight: 600; }
+  .connect-status.connected { color: var(--success); }
+  .connect-status.pending { color: #E65100; }
+
+  .toast {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    background: var(--navy);
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 10px;
+    font-size: 13px;
+    font-weight: 500;
+    box-shadow: var(--shadow-lg);
+    transform: translateY(80px);
+    opacity: 0;
+    transition: all 0.3s;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .toast.show { transform: translateY(0); opacity: 1; }
+
+  ::-webkit-scrollbar { width: 5px; }
+  ::-webkit-scrollbar-track { background: transparent; }
+  ::-webkit-scrollbar-thumb { background: var(--slate); border-radius: 3px; }
+
+  .section-heading {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--gray);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    margin-top: 20px;
+  }
+  .section-heading:first-child { margin-top: 0; }
+
+  .toggle-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 12px;
+  }
+
+  .toggle-label { font-size: 13px; color: var(--dark); }
+
+  .toggle {
+    width: 38px; height: 20px;
+    background: var(--slate);
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  .toggle.on { background: var(--blue); }
+  .toggle::after {
+    content: '';
+    width: 14px; height: 14px;
+    background: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 3px; left: 3px;
+    transition: transform 0.2s;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+  }
+  .toggle.on::after { transform: translateX(18px); }
+
+  .canva-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 5px 12px;
+    background: linear-gradient(135deg, #7B2FBE, #4353FF);
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 0.04em;
+  }
+</style>
+</head>
+<body>
+
+<div class="layout">
+
+  <nav class="sidebar">
+    <div class="sidebar-logo">
+      <div style="font-family:'Montserrat',sans-serif;font-size:20px;font-weight:800;color:#fff;letter-spacing:0.02em;">Renn<span style="color:#206DA8">X</span>AI</div>
+      <div style="font-family:'Montserrat',sans-serif;font-size:9px;font-weight:600;color:rgba(255,255,255,0.4);letter-spacing:0.15em;margin-top:4px;">CONTENT STUDIO</div>
+    </div>
+
+    <div class="sidebar-nav">
+      <div class="nav-label">Content</div>
+      <div class="nav-item active" data-tab="generate" onclick="showTab('generate', this)">
+        <span class="nav-icon">✦</span> Content Generator
+      </div>
+      <div class="nav-item" data-tab="schedule" onclick="showTab('schedule', this)">
+        <span class="nav-icon">📅</span> Schedule Queue
+      </div>
+
+      <div class="nav-label">Distribution</div>
+      <div class="nav-item" data-tab="platforms" onclick="showTab('platforms', this)">
+        <span class="nav-icon">🔗</span> Platform Connect
+      </div>
+      <div class="nav-item" data-tab="analytics" onclick="showTab('analytics', this)">
+        <span class="nav-icon">📊</span> Analytics
+      </div>
+
+      <div class="nav-label">Pipeline</div>
+      <div class="nav-item" data-tab="leads" onclick="showTab('leads', this)">
+        <span class="nav-icon">🎯</span> Lead Scoring
+      </div>
+      <div class="nav-item" data-tab="settings" onclick="showTab('settings', this)">
+        <span class="nav-icon">⚙️</span> Agent Settings
+      </div>
+    </div>
+
+    <div class="sidebar-bottom">
+      <div class="status-dot">
+        <div class="dot"></div>
+        Agent active · @RennXAI
+      </div>
+    </div>
+  </nav>
+
+  <div class="main">
+
+    <div class="topbar">
+      <div class="topbar-title" id="page-title">Content Generator</div>
+      <div class="topbar-right">
+        <span class="canva-badge">⬡ Canva Template</span>
+        <div class="platform-badge meta connected" title="Meta connected">
+          <span>f</span> Meta Connected
+        </div>
+        <div class="platform-badge tiktok disconnected" title="TikTok — click to connect" onclick="showTab('platforms')">
+          <span>♪</span> TikTok
+        </div>
+      </div>
+    </div>
+
+    <div class="content-area">
+
+      <div class="validation-banner">
+        <div>
+          <div class="banner-title">🎯 VALIDATION MILESTONE TRACKER</div>
+          <div class="banner-sub">Hit 50 freebie downloads to unlock GoHighLevel</div>
+        </div>
+        <div class="progress-track">
+          <div class="progress-label">
+            <span>Freebie Downloads</span>
+            <span id="dl-count">12 / 50</span>
+          </div>
+          <div class="progress-bar">
+            <div class="progress-fill" id="dl-bar" style="width:24%"></div>
+          </div>
+        </div>
+        <div style="text-align:right">
+          <div style="font-family:'Montserrat',sans-serif;font-size:22px;font-weight:900;">24%</div>
+          <div style="font-size:11px;opacity:0.6;">to GHL unlock</div>
+        </div>
+      </div>
+
+      <div class="panel active" id="panel-generate">
+        <div class="gen-grid">
+
+          <div>
+            <div class="card">
+              <div class="card-header">
+                <div class="card-title">⚡ Generate Content</div>
+                <div style="display:flex;gap:8px;">
+                  <div class="canva-badge" style="font-size:10px;" id="active-template-badge">Template: DAHIbIjNznw</div>
+                </div>
+              </div>
+              <div class="card-body">
+
+                <div class="section-heading">Content Pillar</div>
+                <div class="pillar-grid">
+                  <div class="pillar-chip selected" onclick="selectPillar(this)">AI Systems</div>
+                  <div class="pillar-chip" onclick="selectPillar(this)">Results & Proof</div>
+                  <div class="pillar-chip" onclick="selectPillar(this)">Education</div>
+                  <div class="pillar-chip" onclick="selectPillar(this)">Behind the Brand</div>
+                  <div class="pillar-chip" onclick="selectPillar(this)">Offers & CTAs</div>
+                </div>
+
+                <div class="section-heading">Format</div>
+                <div class="format-grid">
+                  <div class="format-card selected" onclick="selectFormat(this,'carousel')" id="fmt-carousel">
+                    <div class="format-icon">🃏</div>
+                    <div class="format-name">Carousel</div>
+                    <div class="format-desc">Canva template · 10 slides</div>
+                  </div>
+                  <div class="format-card" onclick="selectFormat(this,'video')" id="fmt-video">
+                    <div class="format-icon">🎬</div>
+                    <div class="format-name">Video Script</div>
+                    <div class="format-desc">TikTok · Reels · Shorts</div>
+                  </div>
+                  <div class="format-card" onclick="selectFormat(this,'caption')" id="fmt-caption">
+                    <div class="format-icon">✍️</div>
+                    <div class="format-name">Caption</div>
+                    <div class="format-desc">Hook → Truth → CTA</div>
+                  </div>
+                  <div class="format-card" onclick="selectFormat(this,'story')" id="fmt-story">
+                    <div class="format-icon">📱</div>
+                    <div class="format-name">Story Sequence</div>
+                    <div class="format-desc">Instagram · Facebook</div>
+                  </div>
+                </div>
+
+                <div class="section-heading">Content Brief</div>
+                <label>Topic / Hook</label>
+                <input type="text" id="topic-input" placeholder="e.g. AI replaced my admin work in 3 weeks" />
+
+                <div class="field-row">
+                  <div>
+                    <label>Platform</label>
+                    <select id="platform-select">
+                      <option>Instagram</option>
+                      <option>TikTok</option>
+                      <option>Facebook</option>
+                      <option>LinkedIn</option>
+                    </select>
+                  </div>
+                  <div>
+                    <label>CTA</label>
+                    <select id="cta-select">
+                      <option>Bio link — freebie</option>
+                      <option>DM "START"</option>
+                      <option>Comment below</option>
+                      <option>Save this post</option>
+                      <option>Share with someone</option>
+                    </select>
+                  </div>
+                </div>
+
+                <label>Additional Context (optional)</label>
+                <textarea id="context-input" placeholder="Any specific points, stats, or angles to include..."></textarea>
+
+                <div style="display:flex;gap:10px;">
+                  <button class="btn btn-primary" onclick="generateContent()" id="gen-btn" style="flex:1;">
+                    <span id="gen-btn-text">✦ Generate Content</span>
+                  </button>
+                  <button class="btn btn-outline" onclick="clearAll()">Clear</button>
+                </div>
+
+                <div id="output-area" style="display:none;">
+                  <div class="generated-content">
+                    <div class="generated-label">Generated Content</div>
+                    <div class="generated-text" id="output-text"></div>
+                    <div class="copy-btn" onclick="copyContent()">📋 Copy to clipboard</div>
+                  </div>
+
+                  <div style="display:flex;gap:10px;margin-top:14px;">
+                    <button class="btn btn-navy" onclick="schedulePost()" style="flex:1;">
+                      📅 Add to Schedule
+                    </button>
+                    <button class="btn btn-outline" onclick="generateContent()">
+                      ↻ Regenerate
+                    </button>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="card">
+              <div class="card-header">
+                <div class="card-title">👁 Live Preview</div>
+                <div id="preview-format-badge" style="font-size:11px;color:var(--gray);">Carousel · Canva</div>
+              </div>
+              <div class="card-body">
+
+                <div class="preview-area" id="preview-area">
+                  <div class="preview-placeholder" id="preview-placeholder">
+                    <div class="icon">🃏</div>
+                    <p>Preview will appear<br>after generation</p>
+                  </div>
+
+                  <div class="carousel-preview" id="carousel-preview" style="display:none;">
+                    <div class="slide-thumb" id="slide-display">
+                      <div class="slide-num">SLIDE 1 OF 6 · RENNXAI</div>
+                      <div class="slide-headline" id="slide-headline">Your hook goes here</div>
+                      <div class="slide-body" id="slide-body">Supporting copy and key insight for this slide.</div>
+                      <div class="slide-cta" id="slide-cta-tag">Link in bio →</div>
+                    </div>
+                    <div class="slide-nav" id="slide-nav"></div>
+                  </div>
+
+                  <div class="video-preview" id="video-preview" style="display:none;">
+                    <div class="vp-bg"></div>
+                    <div class="vp-content">
+                      <div class="vp-hook" id="vp-hook">Hook text goes here</div>
+                      <div class="vp-sub">RennXAI · @rennxai</div>
+                    </div>
+                    <div class="vp-watermark">
+                      <div class="vp-handle">@rennxai</div>
+                      <div class="vp-cta-tag" id="vp-cta">Link in bio</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="section-heading">Auto-Post Settings</div>
+                <div class="toggle-row">
+                  <span class="toggle-label">Post to Instagram</span>
+                  <div class="toggle on" onclick="this.classList.toggle('on')"></div>
+                </div>
+                <div class="toggle-row">
+                  <span class="toggle-label">Post to Facebook</span>
+                  <div class="toggle on" onclick="this.classList.toggle('on')"></div>
+                </div>
+                <div class="toggle-row">
+                  <span class="toggle-label">Post to TikTok</span>
+                  <div class="toggle" onclick="this.classList.toggle('on')"></div>
+                </div>
+
+                <div class="section-heading">Schedule</div>
+                <div class="field-row">
+                  <div>
+                    <label>Date</label>
+                    <input type="date" id="sched-date" />
+                  </div>
+                  <div>
+                    <label>Time (PST)</label>
+                    <input type="time" id="sched-time" value="08:00" />
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="panel" id="panel-schedule">
+        <div class="sched-grid">
+          <div>
+            <div class="card">
+              <div class="card-header">
+                <div class="card-title">📅 Content Queue</div>
+                <button class="btn btn-primary btn-sm" onclick="showTab('generate')">+ New Post</button>
+              </div>
+              <div class="card-body">
+                <div class="calendar-week" id="calendar-week"></div>
+                <div id="queue-list">
+                  <div class="queue-item">
+                    <div class="queue-platform">📸</div>
+                    <div class="queue-info">
+                      <div class="queue-title">AI replaced my admin — carousel</div>
+                      <div class="queue-meta">Instagram · Today 8:00 AM PST</div>
+                    </div>
+                    <span class="queue-status status-scheduled">SCHEDULED</span>
+                  </div>
+                  <div class="queue-item">
+                    <div class="queue-platform">📱</div>
+                    <div class="queue-info">
+                      <div class="queue-title">3 things caregivers don't know about AI</div>
+                      <div class="queue-meta">TikTok · Today 7:00 PM PST</div>
+                    </div>
+                    <span class="queue-status status-draft">DRAFT</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="card">
+              <div class="card-header"><div class="card-title">📬 Post Performance</div></div>
+              <div class="card-body">
+                <div class="stat-card" style="margin-bottom:12px;border-left-color:var(--success);">
+                  <div class="stat-label">Posts This Week</div>
+                  <div class="stat-value">7</div>
+                  <div class="stat-delta">↑ On track · 1/day target</div>
+                </div>
+                <div class="stat-card" style="border-left-color:var(--blue);">
+                  <div class="stat-label">Avg. Reach per Post</div>
+                  <div class="stat-value">847</div>
+                  <div class="stat-delta">↑ 18% from last week</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="panel" id="panel-platforms">
+        <div style="max-width:640px;">
+          <div class="card">
+            <div class="card-header"><div class="card-title">🔗 Platform Connections</div></div>
+            <div class="card-body" id="platform-cards">
+              <div class="connect-card" id="connect-loading">
+                <div class="connect-logo">⏳</div>
+                <div class="connect-info">
+                  <div class="connect-name">Loading platform status...</div>
+                  <div class="connect-desc">Fetching live state from GHL</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="panel" id="panel-analytics">
+        <div class="analytics-grid">
+          <div class="stat-card">
+            <div class="stat-label">Total Reach</div>
+            <div class="stat-value">14.2K</div>
+            <div class="stat-delta">↑ 23% this week</div>
+          </div>
+          <div class="stat-card" style="border-left-color:var(--teal);">
+            <div class="stat-label">Freebie Downloads</div>
+            <div class="stat-value">12</div>
+            <div class="stat-delta">↑ 38 to GHL unlock</div>
+          </div>
+          <div class="stat-card" style="border-left-color:var(--navy);">
+            <div class="stat-label">Followers (Total)</div>
+            <div class="stat-value">10.1K</div>
+            <div class="stat-delta">↑ +47 this week</div>
+          </div>
+          <div class="stat-card" style="border-left-color:#E65100;">
+            <div class="stat-label">Hot Leads</div>
+            <div class="stat-value">3</div>
+            <div class="stat-delta">→ Routed to Slack</div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header"><div class="card-title">🎯 Funnel Performance</div></div>
+          <div class="card-body">
+            <div style="font-size:12px;color:var(--gray);">Wire to your analytics provider — currently a static mockup.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="panel" id="panel-leads">
+        <div class="leads-grid">
+          <div>
+            <div class="card">
+              <div class="card-header">
+                <div class="card-title">🎯 Lead Scoring Dashboard</div>
+                <div style="font-size:11px;color:var(--gray);">Auto-routed to Slack #rxai-leads</div>
+              </div>
+              <div class="card-body">
+                <div class="section-heading">Static mock — wire to GHL Contacts API to populate</div>
+                <div class="lead-row">
+                  <div class="lead-avatar">KL</div>
+                  <div class="lead-info">
+                    <div class="lead-name">@karenliveswell</div>
+                    <div class="lead-trigger">DM: "how do I start with the CRM?" · Instagram · 2h ago</div>
+                  </div>
+                  <span class="lead-score score-hot">🔴 HOT</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="card">
+              <div class="card-header"><div class="card-title">📋 Lead Rules</div></div>
+              <div class="card-body">
+                <div style="font-size:12px;color:var(--gray);">Configure scoring rules here once GHL Contacts is wired.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="panel" id="panel-settings">
+        <div style="max-width:600px;">
+          <div class="card">
+            <div class="card-header"><div class="card-title">⚙️ Agent Configuration</div></div>
+            <div class="card-body">
+              <div class="section-heading">Agent Identity</div>
+              <label>Agent Name</label>
+              <input type="text" value="RennXAI Social Media Manager" />
+              <label>Brand Handle</label>
+              <input type="text" value="@RennXAI" />
+              <label>Canva Carousel Template ID</label>
+              <input type="text" id="setting-carousel-template" value="DAHIbIjNznw" />
+              <label>Canva Reel Template ID</label>
+              <input type="text" id="setting-reel-template" value="DAG78MHKHi4" />
+              <button class="btn btn-navy btn-block" onclick="showToast('✓ Settings saved (local only)')">Save Configuration</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast">
+  <span id="toast-msg"></span>
+</div>
+
+<script>
+let currentFormat = 'carousel';
+let currentPillar = 'AI Systems';
+let currentSlide = 0;
+let slides = [];
+
+function showTab(tab, el) {
+  document.querySelectorAll('.panel').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.nav-item').forEach(n => n.classList.remove('active'));
+  document.getElementById('panel-' + tab).classList.add('active');
+
+  const titles = {
+    generate: 'Content Generator',
+    schedule: 'Schedule Queue',
+    platforms: 'Platform Connections',
+    analytics: 'Analytics',
+    leads: 'Lead Scoring',
+    settings: 'Agent Settings'
+  };
+  document.getElementById('page-title').textContent = titles[tab] || tab;
+
+  if (el) {
+    el.classList.add('active');
+  } else {
+    const target = document.querySelector('.nav-item[data-tab="' + tab + '"]');
+    if (target) target.classList.add('active');
+  }
+
+  if (tab === 'platforms') loadPlatforms();
+}
+
+function selectPillar(el) {
+  document.querySelectorAll('.pillar-chip').forEach(c => c.classList.remove('selected'));
+  el.classList.add('selected');
+  currentPillar = el.textContent;
+}
+
+function selectFormat(el, fmt) {
+  document.querySelectorAll('.format-card').forEach(c => c.classList.remove('selected'));
+  el.classList.add('selected');
+  currentFormat = fmt;
+  const badge = document.getElementById('preview-format-badge');
+  const labels = { carousel: 'Carousel · Canva', video: 'Video Script · TikTok/Reels', caption: 'Caption · Instagram/FB', story: 'Story Sequence' };
+  badge.textContent = labels[fmt] || fmt;
+
+  const tplBadge = document.getElementById('active-template-badge');
+  const carouselId = document.getElementById('setting-carousel-template').value || 'DAHIbIjNznw';
+  const reelId = document.getElementById('setting-reel-template').value || 'DAG78MHKHi4';
+  tplBadge.textContent = fmt === 'video' ? 'Template: ' + reelId : 'Template: ' + carouselId;
+}
+
+async function generateContent() {
+  const topic = document.getElementById('topic-input').value.trim();
+  const platform = document.getElementById('platform-select').value;
+  const cta = document.getElementById('cta-select').value;
+  const context = document.getElementById('context-input').value.trim();
+
+  if (!topic) {
+    showToast('⚠ Enter a topic or hook first');
+    return;
+  }
+
+  const btn = document.getElementById('gen-btn');
+  const btnText = document.getElementById('gen-btn-text');
+  btn.disabled = true;
+  btnText.innerHTML = '<span class="loading-ring"></span> Generating...';
+
+  try {
+    const response = await fetch('/api/generate-form', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ format: currentFormat, pillar: currentPillar, platform, cta, topic, context })
+    });
+
+    if (!response.ok) {
+      const err = await response.json().catch(() => ({}));
+      throw new Error(err.error || ('HTTP ' + response.status));
+    }
+
+    const data = await response.json();
+    const text = data.text || '';
+
+    document.getElementById('output-text').textContent = text;
+    document.getElementById('output-area').style.display = 'block';
+    renderPreview(text, topic);
+    showToast('✦ Content generated');
+
+  } catch (err) {
+    document.getElementById('output-text').textContent = 'Generation failed: ' + (err.message || err);
+    document.getElementById('output-area').style.display = 'block';
+    showToast('⚠ Generation failed — see output for details');
+  }
+
+  btn.disabled = false;
+  btnText.innerHTML = '✦ Generate Content';
+}
+
+function renderPreview(text, topic) {
+  const placeholder = document.getElementById('preview-placeholder');
+  const carouselPreview = document.getElementById('carousel-preview');
+  const videoPreview = document.getElementById('video-preview');
+
+  placeholder.style.display = 'none';
+  carouselPreview.style.display = 'none';
+  videoPreview.style.display = 'none';
+
+  if (currentFormat === 'carousel') {
+    carouselPreview.style.display = 'block';
+    const headlines = [...text.matchAll(/SLIDE \d+ HEADLINE:\s*(.+)/g)].map(m => m[1].trim());
+    const bodies = [...text.matchAll(/SLIDE \d+ BODY:\s*([^\n]+(?:\n(?!SLIDE )[^\n]+)*)/g)].map(m => m[1].trim());
+    slides = headlines.map((h, i) => ({ h, b: bodies[i] || '' }));
+    if (!slides.length) slides = [{ h: topic, b: text.substring(0, 240) }];
+    currentSlide = 0;
+    renderSlide(0);
+    buildSlideNav();
+  } else if (currentFormat === 'video') {
+    videoPreview.style.display = 'block';
+    const hookMatch = text.match(/HOOK[^:]*:\s*(.+)/);
+    const ctaMatch = text.match(/CTA[^:]*:\s*(.+)/);
+    document.getElementById('vp-hook').textContent = hookMatch ? hookMatch[1].trim() : topic;
+    document.getElementById('vp-cta').textContent = ctaMatch ? ctaMatch[1].trim().substring(0, 30) : 'Link in bio';
+  } else {
+    carouselPreview.style.display = 'block';
+    slides = [{ h: topic, b: text.substring(0, 240) }];
+    currentSlide = 0;
+    renderSlide(0);
+    buildSlideNav();
+  }
+}
+
+function renderSlide(idx) {
+  if (!slides[idx]) return;
+  const s = slides[idx];
+  document.getElementById('slide-display').querySelector('.slide-num').textContent = 'SLIDE ' + (idx + 1) + ' OF ' + slides.length + ' · RENNXAI';
+  document.getElementById('slide-headline').textContent = s.h || '';
+  document.getElementById('slide-body').textContent = (s.b || '').substring(0, 160);
+}
+
+function buildSlideNav() {
+  const nav = document.getElementById('slide-nav');
+  nav.innerHTML = slides.map((_, i) =>
+    '<div class="slide-dot ' + (i === 0 ? 'active' : '') + '" onclick="goSlide(' + i + ')"></div>'
+  ).join('');
+}
+
+function goSlide(idx) {
+  currentSlide = idx;
+  renderSlide(idx);
+  document.querySelectorAll('.slide-dot').forEach((d, i) => d.classList.toggle('active', i === idx));
+}
+
+function copyContent() {
+  const text = document.getElementById('output-text').textContent;
+  navigator.clipboard.writeText(text).then(() => showToast('📋 Copied to clipboard'));
+}
+
+async function schedulePost() {
+  const date = document.getElementById('sched-date').value || new Date().toISOString().slice(0, 10);
+  const time = document.getElementById('sched-time').value || '08:00';
+  const topic = document.getElementById('topic-input').value || 'Generated post';
+  const platform = document.getElementById('platform-select').value;
+  const summary = document.getElementById('output-text').textContent;
+  const fmt = currentFormat === 'video' ? 'reel' : (currentFormat === 'carousel' ? 'carousel' : 'single');
+
+  showToast('📅 Creating draft in GHL Social Planner...');
+
+  try {
+    const res = await fetch('/api/schedule-single', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ summary, format: fmt, scheduleDate: date + 'T' + time + ':00.000Z', title: topic })
+    });
+    const data = await res.json();
+    if (!res.ok || !data.ok) {
+      throw new Error(data.error || ('HTTP ' + res.status));
+    }
+    addQueueItem(topic, platform, date + ' ' + time, data.skipped ? 'DRAFT' : 'SCHEDULED');
+    showToast(data.skipped ? '⚠ Saved locally — no eligible GHL account' : '✓ Draft created in GHL');
+  } catch (err) {
+    addQueueItem(topic, platform, date + ' ' + time, 'DRAFT');
+    showToast('⚠ Could not reach GHL — saved locally: ' + (err.message || err));
+  }
+}
+
+function addQueueItem(topic, platform, when, status) {
+  const list = document.getElementById('queue-list');
+  const icons = { Instagram: '📸', TikTok: '📱', Facebook: '📘', LinkedIn: '👔' };
+  const item = document.createElement('div');
+  item.className = 'queue-item';
+  const cls = status === 'SCHEDULED' ? 'status-scheduled' : 'status-draft';
+  item.innerHTML = '<div class="queue-platform">' + (icons[platform] || '📱') + '</div>' +
+    '<div class="queue-info"><div class="queue-title">' + escapeHtml(topic) + '</div>' +
+    '<div class="queue-meta">' + escapeHtml(platform) + ' · ' + escapeHtml(when) + ' PST</div></div>' +
+    '<span class="queue-status ' + cls + '">' + status + '</span>';
+  list.insertBefore(item, list.firstChild);
+}
+
+function escapeHtml(s) {
+  return String(s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+}
+
+function clearAll() {
+  document.getElementById('topic-input').value = '';
+  document.getElementById('context-input').value = '';
+  document.getElementById('output-area').style.display = 'none';
+  document.getElementById('preview-placeholder').style.display = 'flex';
+  document.getElementById('carousel-preview').style.display = 'none';
+  document.getElementById('video-preview').style.display = 'none';
+}
+
+async function loadPlatforms() {
+  const cards = document.getElementById('platform-cards');
+  cards.innerHTML = '<div class="connect-card"><div class="connect-logo">⏳</div><div class="connect-info"><div class="connect-name">Loading platform status...</div></div></div>';
+  try {
+    const res = await fetch('/api/ghl/health');
+    const data = await res.json();
+    const ghlOk = data.ok === true;
+    const accRes = await fetch('/api/ghl/accounts').catch(() => null);
+    const accData = accRes ? await accRes.json() : { accounts: [] };
+    const accounts = accData.accounts || [];
+
+    const known = [
+      { platform: 'instagram', logo: '📸', name: 'Instagram', desc: 'Carousels, reels, stories via Meta Graph API' },
+      { platform: 'facebook', logo: '📘', name: 'Facebook', desc: 'Pages publishing via Meta Graph API' },
+      { platform: 'tiktok', logo: '🎵', name: 'TikTok Business', desc: 'Short-form video via TikTok Content Posting API' },
+      { platform: 'linkedin', logo: '💼', name: 'LinkedIn', desc: 'Carousels (as documents) and text posts' }
+    ];
+
+    cards.innerHTML = '';
+    cards.insertAdjacentHTML('beforeend', renderConnectCard({
+      logo: '🏢', name: 'GoHighLevel Location', desc: ghlOk ? (data.location?.location?.name || 'Connected') : 'Not reachable',
+      status: ghlOk ? 'connected' : 'pending', meta: ghlOk ? 'Location ID: ' + data.locationId : 'Check GHL_LOCATION_API_KEY'
+    }));
+
+    for (const k of known) {
+      const match = accounts.find(a => a.platform === k.platform || a.platform === k.platform + 'Business');
+      cards.insertAdjacentHTML('beforeend', renderConnectCard({
+        logo: k.logo, name: k.name, desc: k.desc,
+        status: match ? 'connected' : 'pending',
+        meta: match ? (match.name || '@' + (match.meta?.username || '')) : 'Connect via GHL > Marketing > Social Planner'
+      }));
+    }
+  } catch (e) {
+    cards.innerHTML = '<div class="connect-card"><div class="connect-logo">⚠️</div><div class="connect-info"><div class="connect-name">Could not load</div><div class="connect-desc">' + escapeHtml(e.message || String(e)) + '</div></div></div>';
+  }
+}
+
+function renderConnectCard(c) {
+  return '<div class="connect-card"><div class="connect-logo">' + c.logo + '</div>' +
+    '<div class="connect-info"><div class="connect-name">' + escapeHtml(c.name) + '</div>' +
+    '<div class="connect-desc">' + escapeHtml(c.desc) + '</div></div>' +
+    '<div><div class="connect-status ' + c.status + '">' + (c.status === 'connected' ? '✓ Connected' : '⚠ Not Connected') + '</div>' +
+    '<div style="font-size:10px;color:var(--gray);margin-top:2px;">' + escapeHtml(c.meta || '') + '</div></div></div>';
+}
+
+function showToast(msg) {
+  const toast = document.getElementById('toast');
+  document.getElementById('toast-msg').textContent = msg;
+  toast.classList.add('show');
+  setTimeout(() => toast.classList.remove('show'), 3000);
+}
+
+function buildCalendarWeek() {
+  const week = document.getElementById('calendar-week');
+  if (!week) return;
+  const today = new Date();
+  const start = new Date(today);
+  start.setDate(start.getDate() - start.getDay() + 1);
+  const dayNames = ['MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT', 'SUN'];
+  let html = '';
+  for (let i = 0; i < 7; i++) {
+    const d = new Date(start);
+    d.setDate(start.getDate() + i);
+    const isToday = d.toDateString() === today.toDateString();
+    html += '<div class="cal-day ' + (isToday ? 'today' : '') + '">' +
+      '<div class="day-name">' + dayNames[i] + '</div>' +
+      '<div class="day-num">' + d.getDate() + '</div>' +
+      '<div class="day-posts">—</div></div>';
+  }
+  week.innerHTML = html;
+}
+
+document.getElementById('sched-date').value = new Date().toISOString().split('T')[0];
+buildCalendarWeek();
+</script>
+
+</body>
+</html>
