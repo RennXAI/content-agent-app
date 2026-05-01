@@ -26,6 +26,10 @@ export interface CalendarPost {
   visualDirection: string;
   slides?: CarouselSlide[];
   reel?: { duration: string; beats: ReelBeat[] };
+  template?: {
+    canvaDesignId: string;
+    pageMap: Array<{ page: number; role: string; copy: string }>;
+  };
 }
 
 export interface GenerateCalendarOptions {
@@ -177,9 +181,24 @@ ${dailyPlan.map((d) => `Day ${d.day} (${d.date}): ${d.format}`).join('\n')}
 Distribute pillars across the calendar (rotate, don't cluster). Pillars to draw from:
 ${CONTENT_PILLARS.map((p) => `- ${p}`).join('\n')}
 
-Format-specific requirements:
-- carousel: 8 slides. Slide 1 = hook + promise. Slides 2-7 = one specific point each (numbers, named tools, before/after). Slide 8 = CTA. Keep slide bodies under 280 chars.
-- reel: 30-45s vertical. Provide 6-9 beats with timestamps (e.g. "0-3s", "3-7s"). Each beat has a visual cue and a voiceover line. First beat must be a stop-scroll hook.
+Format-specific requirements (these match the RennXAI Canva templates exactly):
+- carousel: EXACTLY 10 slides (mapped to a 10-page Canva template).
+  - Slide 1: hook + promise (stop-scroll opener)
+  - Slide 2: the problem / current pain
+  - Slide 3: why the obvious approach fails
+  - Slide 4-7: four specific points, one per slide (numbers, named tools, before/after, mini-frameworks)
+  - Slide 8: a quick win the reader can apply today
+  - Slide 9: the bigger transformation when systemized
+  - Slide 10: CTA (DM, follow, link in bio)
+  - Keep each slide body under 240 chars.
+- reel: 30-45s vertical, EXACTLY 6 beats (mapped to a 6-page Canva reel template).
+  - Beat 1: stop-scroll hook (3s)
+  - Beat 2: the misframe / wrong assumption
+  - Beat 3: reframe / the real problem
+  - Beat 4: the principle / system
+  - Beat 5: the proof or example
+  - Beat 6: CTA / follow
+  - Each beat: timestamp, visual cue, single voiceover line under 22 words.
 - single: One strong image post. Caption must lead with a hook in line 1, then deliver value in 4-7 short lines.
 
 For every post:
@@ -191,9 +210,9 @@ Use the emit_calendar tool to return ALL ${days} posts in one call. Do not summa
 
   const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
 
-  const response = await client.messages.create({
+  const stream = client.messages.stream({
     model: 'claude-sonnet-4-6',
-    max_tokens: 16000,
+    max_tokens: 48000,
     system: [
       { type: 'text', text: SYSTEM_PROMPT, cache_control: { type: 'ephemeral' } },
     ],
@@ -201,6 +220,7 @@ Use the emit_calendar tool to return ALL ${days} posts in one call. Do not summa
     tool_choice: { type: 'tool', name: 'emit_calendar' },
     messages: [{ role: 'user', content: userPrompt }],
   });
+  const response = await stream.finalMessage();
 
   const toolUse = response.content.find(
     (b): b is Anthropic.ToolUseBlock => b.type === 'tool_use',
@@ -214,7 +234,55 @@ Use the emit_calendar tool to return ALL ${days} posts in one call. Do not summa
       `Expected ${days} posts in calendar, got ${posts?.length ?? 0}.`,
     );
   }
-  return posts;
+  return posts.map(attachTemplateRef);
+}
+
+const CAROUSEL_PAGE_ROLES = [
+  'Hook + promise',
+  'Problem / current pain',
+  'Why obvious approach fails',
+  'Specific point 1',
+  'Specific point 2',
+  'Specific point 3',
+  'Specific point 4',
+  'Quick win',
+  'Bigger transformation',
+  'CTA',
+];
+
+const REEL_PAGE_ROLES = [
+  'Stop-scroll hook',
+  'Misframe',
+  'Reframe',
+  'Principle / system',
+  'Proof / example',
+  'CTA',
+];
+
+function attachTemplateRef(post: CalendarPost): CalendarPost {
+  if (post.format === 'carousel') {
+    const tpl = process.env.CANVA_CAROUSEL_TEMPLATE_ID;
+    if (!tpl || !post.slides) return post;
+    const pageMap = CAROUSEL_PAGE_ROLES.map((role, i) => ({
+      page: i + 1,
+      role,
+      copy: post.slides?.[i]
+        ? `${post.slides[i].headline}\n${post.slides[i].body}`
+        : '',
+    }));
+    return { ...post, template: { canvaDesignId: tpl, pageMap } };
+  }
+  if (post.format === 'reel') {
+    const tpl = process.env.CANVA_REEL_TEMPLATE_ID;
+    if (!tpl || !post.reel?.beats) return post;
+    const pageMap = REEL_PAGE_ROLES.map((role, i) => ({
+      page: i + 1,
+      role,
+      copy: post.reel?.beats[i]?.voiceover ?? '',
+    }));
+    return { ...post, template: { canvaDesignId: tpl, pageMap } };
+  }
+  return post;
 }
 
 export function postToGhlSummary(post: CalendarPost): string {
