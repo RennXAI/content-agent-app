@@ -7,7 +7,7 @@
 
 **Primary Message:** "You sell. LixenAI builds, deploys, and fulfills."
 
-**Brand Position:** Premium, credible, structured AI-powered business operating system for med-spa operators and independent Sales Partners.
+**Brand Position:** Premium, credible, structured AI-powered business operating system for growth-stage service businesses and independent Sales Partners.
 
 ---
 
@@ -33,7 +33,6 @@
 | White | #FFFFFF |
 | Slate | #66758A |
 | Charcoal | #172335 |
-| Med-Spa Blush | #E9DCE7 |
 | Alert Coral | #FF6B6B |
 
 ### Typography
@@ -46,7 +45,7 @@
 
 ### Logo Treatment
 - White wordmark on dark backgrounds
-- Midnight wordmark on light backgrounds
+- Charcoal wordmark on light backgrounds
 - Bottom-right placement, 64 px from corner
 - Clear space = 1× logo height on all sides
 
@@ -87,8 +86,56 @@
 | T6 | Objection Response | Pre-empt and neutralize resistance |
 | T7 | Founder Perspective | Humanize the brand origin story |
 | T8 | Partner Recruitment | Attract qualified Sales Partners |
-| T9 | Med-Spa Scenario | Demonstrate real-world impact |
+| T9 | Business Scenario | Demonstrate real-world impact |
 | T10 | Educational Carousel | Teach a concept across multiple panels |
+
+### Photography Direction — Approved Subjects
+- Business owners and operators in professional office environments
+- Sales professionals on calls or in meetings
+- Small service-business teams at work
+- Discovery calls and client consultations
+- Clean office interiors — modern, organized, well-lit
+- CRM dashboards and business software on screen (blurred or partial)
+- Appointment scheduling and calendar interfaces
+
+**Not approved:** Industry-specific settings, stock-photo clichés, fabricated dashboards, fake revenue screens, lifestyle imagery.
+
+---
+
+## 30-Day Editorial Calendar
+
+| Day | Template | Treatment | Topic |
+|---|---|---|---|
+| 1 | T1 Brand Statement | Dark | Campaign launch — core promise |
+| 2 | T2 Responsibility Split | Dark | Partner vs LixenAI roles (overview) |
+| 3 | T4 Pain vs System | Light | Manual chaos vs operating system |
+| 4 | T3 Workflow | Dark | Lead to booked call — automated |
+| 5 | T9 Scenario | Photo | Missed call — business owner scene |
+| 6 | T5 Product Feature | Screenshot | Missed call recovery UI |
+| 7 | T10 Carousel | Light | 6 things LixenAI handles |
+| 8 | T1 Brand Statement | Dark | Build once, deploy everywhere |
+| 9 | T6 Objection | Dark | "Is this just a chatbot?" |
+| 10 | T8 Recruitment | Light | What a Sales Partner does + Disclosure |
+| 11 | T3 Workflow | Dark | Pipeline intelligence |
+| 12 | T4 Pain vs System | Light | Hiring vs deploying |
+| 13 | T9 Scenario | Photo | Sales professional on a discovery call |
+| 14 | T7 Founder | Light | Why we built LixenAI |
+| 15 | T5 Product Feature | Screenshot | AI follow-up sequence UI |
+| 16 | T2 Responsibility Split | Dark | Full detailed breakdown |
+| 17 | T9 Scenario | Dark | Missed call — step-by-step |
+| 18 | T6 Objection | Dark | "How do I know it works?" |
+| 19 | T10 Carousel | Light | The 6 workflows (full series) |
+| 20 | T3 Workflow | Dark | Review request automation |
+| 21 | Poll | Simple | Biggest follow-up challenge? |
+| 22 | T8 Recruitment | Light | Income model + Disclosure |
+| 23 | T1 Brand Statement | Dark | One system, infinite reach |
+| 24 | T9 Scenario | Photo | Discovery call moment |
+| 25 | T4 Pain vs System | Dark | Manual chase vs automated pipeline |
+| 26 | T5 Product Feature | Screenshot/Photo | Pipeline view UI |
+| 27 | T9 Scenario | Dark | After-hours booking automation |
+| 28 | T6 Objection | Dark | "What do I need to start?" + Disclosure |
+| 29 | T8 Recruitment | Light | Who thrives as a partner + Disclosure |
+| 30 | T1 Brand Statement | Photo | Campaign close |
 
 ---
 
@@ -106,12 +153,6 @@
 
 **Background:** Full-bleed Midnight (#071426) with a very subtle radial glow centered slightly above mid-canvas, in Deep Navy (#0C2138) — diameter approx 600 px, opacity 40%.
 
-**Structural Layout:**
-- Top zone (rows 1–3): Category label + overline
-- Mid zone (rows 4–8): Primary headline — full-width, centered
-- Lower-mid zone (rows 9–11): Supporting message
-- Bottom zone: Thin separator line, LixenAI logo right-aligned
-
 **Category Label:** `BRAND STATEMENT` — Inter SemiBold, all caps, Slate (#66758A), 12 px, 64 px from top-left
 
 **Overline:** `Operational AI for growth businesses.` — Inter Regular, Electric Cyan (#25C7F4), 16 px, 8 px below label
@@ -121,17 +162,17 @@
 > LixenAI builds,
 > deploys, and fulfills.
 
-**Headline Treatment:** "LixenAI" on line 2 rendered in a horizontal gradient: Lixen Blue (#1677FF) → Electric Cyan (#25C7F4). All other words in White.
+**Headline Treatment:** "LixenAI" rendered in a horizontal gradient: Lixen Blue (#1677FF) → Electric Cyan (#25C7F4). All other words in White.
 
-**Supporting Message (Inter Regular, 18 px, Slate #66758A, centered):**
+**Supporting Message (Inter Regular, 18 px, Slate, centered):**
 > One system. Two roles. Zero gaps.
 
-**Decorative Element:** Three thin horizontal lines, 240 px wide, stacked 8 px apart, centered below the headline. Colors left to right: Lixen Blue, Electric Cyan, Signal Violet. Opacity 60%.
+**Decorative Element:** Three thin horizontal lines, 240 px wide, stacked 8 px apart, centered below the headline. Colors: Lixen Blue, Electric Cyan, Signal Violet. Opacity 60%.
 
 **CTA (Inter Medium, 15 px, Electric Cyan):**
 > Learn how the system works → LixenAI.com
 
-**Logo:** White wordmark, bottom-right, 64 px from corner
+**Logo:** White wordmark, bottom-right
 
 ---
 
@@ -149,7 +190,7 @@ Over the next 30 days we're going to show you exactly what that looks like — i
 
 Follow along. Day 1 of 30.
 
-**#LixenAI #AIForBusiness #SalesPartner #MedSpa #OperationalAI**
+**#LixenAI #AIForBusiness #SalesPartner #OperationalAI #BusinessSystems**
 
 ---
 
@@ -228,7 +269,7 @@ That's what we mean when we say operational AI.
 
 **Primary Headline (Sora Bold, 44 px, Charcoal #172335, left-aligned):**
 > Most businesses run
-> on duct tape.
+> on manual effort.
 > LixenAI runs on systems.
 
 **Layout:** Two columns, equal width, 16 px gap, below the headline.
@@ -261,9 +302,9 @@ That's what we mean when we say operational AI.
 
 **LinkedIn Caption:**
 
-The med-spa owner working 60-hour weeks isn't lazy.
+The business owner working 60-hour weeks isn't lazy.
 
-She's using 8 different tools, none of them connected, all of them requiring manual input from someone who doesn't have time.
+She's using 6 different tools, none of them connected, all requiring manual input from someone who doesn't have time.
 
 LixenAI replaces the duct tape with a single connected operating layer.
 
@@ -271,7 +312,7 @@ Missed calls answered. Follow-up automated. Reviews collected. No-shows recovere
 
 This is what a business that runs on systems looks like.
 
-**#MedSpa #BusinessAutomation #LixenAI #AIForOperations #GrowthSystems**
+**#LixenAI #BusinessAutomation #OperationalAI #GrowthBusiness #BusinessSystems**
 
 ---
 
@@ -288,20 +329,18 @@ This is what a business that runs on systems looks like.
 
 **Primary Headline (Sora Bold, 44 px, White, left-aligned):**
 > From first contact
-> to booked appointment.
+> to booked call.
 > Automatically.
 
-**Workflow Diagram** (centered, stacked vertically with connector lines):
+**Workflow Diagram** — five rounded cards, each 880 px wide × 72 px tall, 16 px corner radius, stacked with 8 px vertical connector lines in Electric Cyan.
 
-Five rounded cards, each 880 px wide × 72 px tall, 16 px corner radius, stacked with 8 px vertical connector lines in Electric Cyan.
-
-| Step | Label | Icon Area | Description |
-|---|---|---|---|
-| 01 | NEW LEAD RECEIVED | Small Lixen Blue circle with dot | Prospect fills out form or calls |
-| 02 | AI QUALIFIES INTENT | Signal Violet bg at 15% | Instant response sent via text/AI |
-| 03 | DISCOVERY CALL TRIGGERED | Electric Cyan accent | Sales Partner notified, call scheduled |
-| 04 | FOLLOW-UP AUTOMATED | Growth Teal at 15% | Multi-touch sequence begins |
-| 05 | APPOINTMENT BOOKED | Growth Teal border | Confirmation sent, CRM updated |
+| Step | Label | Description |
+|---|---|---|
+| 01 | NEW LEAD RECEIVED | Prospect submits form or calls |
+| 02 | AI QUALIFIES INTENT | Instant response sent via text or AI |
+| 03 | DISCOVERY CALL TRIGGERED | Sales Partner notified, call scheduled |
+| 04 | FOLLOW-UP AUTOMATED | Multi-touch sequence begins |
+| 05 | MEETING BOOKED | Confirmation sent, CRM updated |
 
 **Card Style:** Deep Navy background (#0C2138), 1 px Electric Cyan border, step number in Slate (left), label in White Inter SemiBold (center), description in Slate Inter Regular (right-aligned).
 
@@ -322,29 +361,28 @@ Here's what happens when a new lead comes in through a LixenAI-powered business:
 02 — AI qualifies and responds instantly
 03 — Discovery call scheduled
 04 — Automated follow-up sequence begins
-05 — Appointment confirmed, CRM updated
+05 — Meeting confirmed, CRM updated
 
 The Sales Partner does the human work. The platform does everything else — instantly, consistently, at scale.
 
 This is what we mean by operational AI. Not a chatbot. A workflow engine.
 
-**#LixenAI #WorkflowAutomation #SalesProcess #AIForBusiness #MedSpaTech**
+**#LixenAI #WorkflowAutomation #SalesProcess #AIForBusiness #BusinessOperations**
 
 ---
 
-## Day 5 — Med-Spa Scenario (Photography)
+## Day 5 — Business Scenario (Photography)
 
-**Template:** T9 — Med-Spa Example Scenario
+**Template:** T9 — Business Scenario
 **Visual Treatment:** Photography-led
 
 ### Canvas Specification
 
 **Photography Direction:**
-- Subject: Female med-spa owner or practice manager, early 30s to mid-40s, in a premium med-spa reception area
-- Environment: Clean white marble surfaces, soft ambient lighting, reception desk with a monitor visible in the background
-- Pose: Looking at a tablet or phone, slight smile — a moment of relief or recognition
-- Mood: Calm, confident, professional
-- No direct gaze at camera
+- Subject: Business owner or operations manager — 30s to 40s — in a modern, professional office environment
+- Activity: Looking at a phone with a moment of calm recognition — the "oh, it handled it" expression
+- Environment: Clean desk, organized workspace, soft natural light — professional but approachable
+- No industry-specific props. Could be any service business.
 
 **Image Treatment:**
 - Full-bleed photo, 1080 × 1350 px
@@ -358,13 +396,13 @@ This is what we mean by operational AI. Not a chatbot. A workflow engine.
 - Padding: 24 px
 
 **Overlay Content:**
-- Status pill (top): `● JUST NOW` in Growth Teal, 11 px
+- Status pill: `● JUST NOW` in Growth Teal, 11 px
 - Line 1: `Missed call detected` Inter SemiBold, White, 14 px
 - Line 2: `AI response sent in 4 seconds` Inter Regular, Slate, 13 px
 - Divider: 1 px, rgba(255,255,255,0.12)
 - Line 3: `Prospect replied: "Yes, I'd like to book."` Inter Regular, Electric Cyan, 13 px
 
-**Category Label (top-left, above safe zone):** `MED-SPA SCENARIO` — Inter SemiBold, all caps, white at 70%, 11 px
+**Category Label (top-left):** `BUSINESS SCENARIO` — Inter SemiBold, all caps, white at 70%, 11 px
 
 **Primary Headline (Sora Bold, 48 px, White, bottom zone, left-aligned):**
 > She didn't answer.
@@ -379,7 +417,7 @@ This is what we mean by operational AI. Not a chatbot. A workflow engine.
 
 **LinkedIn Caption:**
 
-It's Thursday at 2 PM. The owner is in a consultation. The phone rings — no one answers.
+It's Thursday at 2 PM. The owner is in a client meeting. The phone rings — no one answers.
 
 In most businesses, that's a lost lead.
 
@@ -393,7 +431,7 @@ She never had to touch it.
 
 This is what running on a system looks like.
 
-**#MedSpa #MissedCallRecovery #LixenAI #AIAutomation #BusinessOwner**
+**#LixenAI #MissedCallRecovery #AIAutomation #BusinessOwner #OperationalAI**
 
 ---
 
@@ -406,35 +444,34 @@ This is what running on a system looks like.
 
 **Background:** Deep Navy (#0C2138), full-bleed.
 
-**Category Label:** `PRODUCT FEATURE` — Inter SemiBold, all caps, Slate, 12 px, top-left
+**Category Label:** `PRODUCT FEATURE` — Inter SemiBold, all caps, Slate, 12 px
 
 **Primary Headline (Sora SemiBold, 40 px, White, left-aligned):**
 > Missed call, meet
 > instant AI response.
 
-**Product Interface Panel** (centered, 880 px wide, 16 px radius):
-- Frame: Thin Lixen Blue border, 1 px
-- Background: Charcoal (#172335)
-- Top bar: Small dots (red/yellow/green macOS style at 6 px each) — decorative only, 24 px from top-left — OR a minimal top-nav bar with "LixenAI — Missed Call Recovery" in Slate 13 px
+**Product Interface Panel** (centered, 880 px wide, 16 px radius, Charcoal bg, 1 px Electric Cyan border):
+
+**Panel Header:** `LixenAI — Missed Call Recovery` in Slate, 13 px
 
 **Mock Interface Content:**
 - Timeline entry row:
   - Left icon: Phone-with-slash icon in Alert Coral circle, 32 px
   - Label: `MISSED CALL` in Coral, 11 px caps
   - Time: `2:14 PM — 4 seconds ago`
-  - Contact: `Sara M. — New Prospect`
+  - Contact: `Alex M. — New Prospect`
 - Arrow down (Electric Cyan, 24 px)
 - Response preview card:
   - Label: `AI RESPONSE SENT` in Growth Teal, 11 px caps
-  - Message bubble: "Hi Sara! You just reached Radiance Med Spa. We'd love to connect — are you interested in booking a free consultation?"
+  - Message bubble: "Hi Alex! You just reached [Business Name]. We'd love to connect — are you interested in booking a free consultation?"
   - Sent via: SMS · Delivered ✓
 
-**Feature Tag Pills (below interface, left-aligned):**
-Three pills in a row: `INSTANT RESPONSE` · `AI-WRITTEN` · `AUTO-LOGGED TO CRM`
+**Feature Tag Pills:**
+`INSTANT RESPONSE` · `AI-WRITTEN` · `AUTO-LOGGED TO CRM`
 Style: Small rounded pill, 8 px radius, Electric Cyan border 1 px, Cyan text 11 px, transparent bg
 
 **Supporting Message (Inter Regular, 16 px, Slate):**
-> Every missed call triggers an automated, personalized outreach — without anyone on your team lifting a finger.
+> Every missed call triggers automated, personalized outreach — without anyone on your team lifting a finger.
 
 **Logo:** White wordmark, bottom-right
 
@@ -444,15 +481,15 @@ Style: Small rounded pill, 8 px radius, Electric Cyan border 1 px, Cyan text 11 
 
 The average business misses 22% of inbound calls.
 
-Each missed call from a new prospect has a weighted revenue value. In med-spa, that number is significant.
+Each missed call from a new prospect has a weighted revenue value.
 
 LixenAI's Missed Call Recovery workflow detects a missed call and fires an AI-written SMS within seconds — personalized to the prospect, logged to the CRM, and flagged for your Sales Partner to follow up.
 
 No one had to do anything. The system did it.
 
-That's one workflow out of six that run automatically inside every LixenAI deployment.
+That's one workflow out of six running automatically inside every LixenAI deployment.
 
-**#LixenAI #MissedCall #AIAutomation #MedSpa #LeadRecovery**
+**#LixenAI #MissedCall #AIAutomation #LeadRecovery #BusinessAutomation**
 
 ---
 
@@ -477,11 +514,9 @@ That's one workflow out of six that run automatically inside every LixenAI deplo
 
 ### Panel 2
 
-**Background:** Cloud White
-**Number:** `01` Sora Bold, 64 px, Lixen Blue, top-left, 64 px from edges
+**Number:** `01` Sora Bold, 64 px, Lixen Blue
 **Headline (Sora SemiBold, 40 px, Charcoal):** Missed call recovery
 **Body (Inter Regular, 17 px, Charcoal, 1.7 lh):** Every unanswered call triggers an instant AI-written text. The prospect gets a response before they dial a competitor.
-**Visual:** Minimal icon — phone + lightning bolt, Lixen Blue, 48 px, right-aligned
 
 ### Panel 3
 
@@ -518,7 +553,7 @@ That's one workflow out of six that run automatically inside every LixenAI deplo
 
 **LinkedIn Caption:**
 
-Most med-spa businesses are running on effort, not systems.
+Most businesses are running on effort, not systems.
 
 There's nothing wrong with the people — the problem is the infrastructure. Or the lack of it.
 
@@ -533,7 +568,7 @@ Here are the 6 workflows LixenAI runs automatically for every client:
 
 Swipe through to see how each one works.
 
-**#LixenAI #BusinessAutomation #MedSpa #AIWorkflows #SalesPartner**
+**#LixenAI #BusinessAutomation #AIWorkflows #SalesPartner #OperationalAI**
 
 ---
 
@@ -553,14 +588,14 @@ Swipe through to see how each one works.
 > Deploy everywhere.
 > Sell indefinitely.
 
-**Treatment:** "Build once" and "Sell indefinitely" in White. "Deploy everywhere." in Lixen Blue → Electric Cyan gradient.
+**Treatment:** "Build once" and "Sell indefinitely." in White. "Deploy everywhere." in Lixen Blue → Electric Cyan gradient.
 
 **Divider:** Three short dash marks, 40 px each, 16 px gap between them, Electric Cyan at 50%, centered
 
 **Supporting Message (Inter Regular, 17 px, Slate, centered):**
 > One Sales Partner. One deployed system. Clients served across every market they reach.
 
-**Decorative horizontal rule:** 1 px, Lixen Blue, 60% width, centered, 16 px below supporting message
+**Decorative horizontal rule:** 1 px, Lixen Blue, 60% width, centered
 
 **CTA (Inter Medium, 15 px, Electric Cyan):** LixenAI.com
 
@@ -597,7 +632,7 @@ Not hustle. Infrastructure.
 
 **Category Label:** `STRAIGHT ANSWER` — Inter SemiBold, all caps, Slate, 12 px
 
-**Objection (Inter SemiBold, 20 px, Signal Violet, italic, left-aligned with 4 px left accent bar in Violet):**
+**Objection (Inter SemiBold, 20 px, Signal Violet, italic, left accent bar):**
 > "Is this just another AI chatbot?"
 
 **Answer Headline (Sora Bold, 44 px, White):**
@@ -611,10 +646,10 @@ LixenAI runs the entire operational layer of a business — lead intake, qualifi
 
 The difference is the difference between a receptionist and a business.
 
-**Visual Separator:** Thin horizontal line, 1 px, gradient Lixen Blue → Electric Cyan, 80% width, below body copy
-
 **Closing Line (Inter SemiBold, 16 px, Electric Cyan):**
 > Chatbots answer. LixenAI acts.
+
+**Thin separator:** 1 px, gradient Lixen Blue → Electric Cyan, 80% width
 
 **Logo:** White wordmark, bottom-right
 
@@ -649,6 +684,7 @@ That's an operating system. Not a chatbot.
 ### Canvas Specification
 
 **Background:** Cloud White (#F5F8FC)
+
 **Category Label:** `SALES PARTNER PROGRAM` — Inter SemiBold, all caps, Lixen Blue, 12 px, top-left with left-border accent
 
 **Primary Headline (Sora Bold, 48 px, Charcoal):**
@@ -657,22 +693,21 @@ That's an operating system. Not a chatbot.
 > actually do?
 
 **Body Section — Rounded card, White bg, 16 px radius, 1 px border #E5E9F0, 24 px padding:**
-**(Inter Medium, 17 px, Charcoal, 1.75 lh)**
+(Inter Medium, 17 px, Charcoal, 1.75 lh)
 
 **You do four things:**
 
-→ Identify med-spa businesses that are losing leads
+→ Identify businesses that are losing leads
 → Run a discovery conversation
 → Present the LixenAI system
 → Close the deal and hand off to our team
 
 That's it. We handle everything after the handoff — deployment, onboarding, tech, support, and ongoing optimization.
 
-**Feature Tags (below card, flex row):**
-Pills: `PERFORMANCE-BASED` · `FULL SUPPORT` · `REAL PRODUCT` · `SCALABLE`
-Style: Lixen Blue border, Lixen Blue text, transparent bg, 8 px radius
+**Feature Tags:**
+`PERFORMANCE-BASED` · `FULL SUPPORT` · `REAL PRODUCT` · `SCALABLE`
 
-**Disclosure (Inter Regular, 11 px, Slate, bottom-left, 64 px from edge):**
+**Disclosure (Inter Regular, 11 px, Slate, bottom-left):**
 *Independent, performance-based Sales Partner opportunity. Not salaried employment. Income is not guaranteed.*
 
 **Logo:** Charcoal wordmark, bottom-right
@@ -685,7 +720,7 @@ We're expanding our Sales Partner network.
 
 Here's what the role actually looks like:
 
-You find med-spa businesses that are missing leads, losing follow-up, and running on chaos.
+You find businesses that are missing leads, losing follow-up, and running on chaos.
 You show them a system that fixes all of it.
 You close the deal.
 We do the rest.
@@ -694,13 +729,13 @@ LixenAI handles deployment, onboarding, training, technical support, and optimiz
 
 No tech background required. Strong communication skills and a consultative mindset are the real requirements.
 
-If you're in B2B sales, practice development, or health-and-wellness business consulting — this is worth a conversation.
+If you're in B2B sales, business development, or consulting — this is worth a conversation.
 
 Link in comments.
 
 *Independent, performance-based Sales Partner opportunity. Not salaried employment. Income is not guaranteed.*
 
-**#LixenAI #SalesPartner #B2BSales #MedSpa #SalesOpportunity**
+**#LixenAI #SalesPartner #B2BSales #SalesOpportunity #BusinessDevelopment**
 
 ---
 
@@ -711,7 +746,7 @@ Link in comments.
 
 ### Canvas Specification
 
-**Background:** Midnight (#071426) with a faint 1 px grid overlay (Deep Navy lines at 4% opacity, 64 px spacing) — gives a subtle technical graph-paper feel without distracting.
+**Background:** Midnight (#071426) with a faint 1 px grid overlay (Deep Navy lines at 4% opacity, 64 px spacing).
 
 **Category Label:** `PIPELINE INTELLIGENCE` — Inter SemiBold, all caps, Electric Cyan, 12 px
 
@@ -723,22 +758,20 @@ Link in comments.
 **Visual: Pipeline Stage Rail**
 A horizontal status rail, 880 px wide, showing five stages as connected rounded badges.
 
-| Stage | Color | Label |
-|---|---|---|
-| New Lead | Lixen Blue | NEW LEAD |
-| Contacted | Electric Cyan at 70% | CONTACTED |
-| Qualified | Signal Violet | QUALIFIED |
-| Proposal | Growth Teal at 70% | PROPOSAL |
-| Closed | Growth Teal | CLOSED |
+| Stage | Color |
+|---|---|
+| New Lead | Lixen Blue |
+| Contacted | Electric Cyan at 70% |
+| Qualified | Signal Violet |
+| Proposal | Growth Teal at 70% |
+| Closed | Growth Teal |
 
-Connector: 2 px line in Slate (#66758A) between each stage. Active stage has a filled circle above it with a small dot indicator.
+**Below rail:** Three representative deal cards (280 × 88 px each, Deep Navy bg, 16 px radius, 1 px Lixen Blue border):
+- "Apex Partners — Jordan R. · QUALIFIED · Follow-up due today"
+- "Summit Group — Casey L. · CONTACTED · Awaiting reply"
+- "Clearview Consulting — Alex S. · NEW LEAD · AI response sent 6 min ago"
 
-**Below rail:** Three representative deal cards (compact, 280 × 88 px each, Deep Navy bg, 16 px radius, 1 px Lixen Blue border):
-- Card 1: "Glow Medspa — Sara M. · QUALIFIED · Follow-up due today"
-- Card 2: "Elite Aesthetics — James R. · CONTACTED · Awaiting reply"
-- Card 3: "Radiance Clinic — Priya S. · NEW LEAD · AI response sent 6 min ago"
-
-Each card has a small colored left-border matching its stage color.
+Each card: small colored left-border matching its stage color.
 
 **Supporting Message (Inter Regular, 15 px, Slate):**
 > Every entry is logged automatically. No manual updates required.
@@ -803,7 +836,7 @@ Items (Inter Medium, 15 px, Charcoal):
 - Consistent execution every time
 - Scales with your pipeline, not payroll
 
-**Closing callout (centered below columns, Cloud White bg, 16 px radius, 1 px Lixen Blue border, 24 px padding):**
+**Closing callout (centered below, 1 px Lixen Blue border, 24 px padding):**
 (Inter SemiBold, 17 px, Charcoal) "One decision. Permanent infrastructure."
 
 **Logo:** Charcoal wordmark, bottom-right
@@ -812,11 +845,11 @@ Items (Inter Medium, 15 px, Charcoal):
 
 **LinkedIn Caption:**
 
-Med-spa owners often assume the answer to operational chaos is more staff.
+Business owners often assume the answer to operational chaos is more staff.
 
 Sometimes that's true. Often it's not the first move.
 
-Before you hire another front-desk person, consider what percentage of the chaos is structural — missed calls, forgotten follow-up, manual no-show management, review requests that never happen.
+Before you hire another coordinator, consider what percentage of the chaos is structural — missed calls, forgotten follow-up, manual no-show management, review requests that never happen.
 
 That's not a people problem. That's a systems gap.
 
@@ -824,22 +857,22 @@ LixenAI fills the systems gap without adding payroll.
 
 When you do hire, your team is doing higher-value work instead of repeatable tasks an AI can handle better.
 
-**#LixenAI #BusinessSystems #MedSpa #HiringVsAutomation #OperationalAI**
+**#LixenAI #BusinessSystems #HiringVsAutomation #OperationalAI #GrowthBusiness**
 
 ---
 
 ## Day 13 — Photography (Sales Professional)
 
-**Template:** T9 — Med-Spa Scenario (Photography variant)
+**Template:** T9 — Business Scenario (Photography variant)
 **Visual Treatment:** Photography-led
 
 ### Canvas Specification
 
 **Photography Direction:**
-- Subject: Male or female sales professional, 30s, smart-casual attire, sitting at a minimal desk setup or standing near a window in a clean modern office
-- Activity: On a phone or video call — mid-conversation, engaged expression, slight forward lean
-- Background: Shallow depth of field, soft neutral office interior — NOT a home office, NOT a beach, NOT a coffee shop
-- Mood: Focused, capable, professional
+- Subject: Sales professional, 30s, smart-casual attire, on a phone or video call
+- Environment: Clean modern office or minimal desk setup — organized, professional, well-lit
+- Pose: Mid-conversation, engaged, slight forward lean — this is a consultative conversation, not a pitch
+- Mood: Focused, capable, authoritative
 
 **Image Treatment:**
 - Full-bleed photo
@@ -847,13 +880,11 @@ When you do hire, your team is doing higher-value work instead of repeatable tas
 - Subtle vignette
 
 **UI Notification Overlay (floating bottom-right, glass card):**
-- Background: rgba(7,20,38,0.85), blur 8px, 16 px radius, 1 px Electric Cyan border
-- Content:
-  - `● LIVE NOTIFICATION` — Growth Teal, 11 px caps
-  - "New prospect qualified — Radiance Med Spa"
-  - "Ready for your discovery call" — Slate, 13 px
+- `● LIVE NOTIFICATION` — Growth Teal, 11 px caps
+- "New prospect qualified — Apex Partners"
+- "Ready for your discovery call" — Slate, 13 px
 
-**Category Label:** `SALES PARTNER — IN THE FIELD` — all caps, Slate, 11 px, top-left
+**Category Label (top-left):** `SALES PARTNER — IN THE FIELD` — all caps, Slate, 11 px
 
 **Primary Headline (Sora Bold, 48 px, White, lower canvas, left-aligned):**
 > You close deals.
@@ -898,9 +929,9 @@ That's what frees a good sales professional to become a great one.
 > great businesses
 > lose to bad systems.
 
-**Body (Inter Regular, 17 px, Charcoal, 1.8 lh, in a soft white inset panel, 16 px radius, 24 px padding, 1 px border #E5E9F0):**
+**Body (Inter Regular, 17 px, Charcoal, 1.8 lh, inset panel, 16 px radius, 24 px padding, 1 px border #E5E9F0):**
 
-The med-spa owners we spoke to weren't failing because they lacked skill or care.
+The business owners we spoke to weren't failing because they lacked skill or care.
 
 They were failing because their infrastructure was held together with manual effort and willpower.
 
@@ -921,7 +952,7 @@ LixenAI was built to seal the leak — permanently, at the systems level.
 
 A few years ago we kept having the same conversation.
 
-Med-spa owner. Brilliant operator. Loves the work. Drowning in everything around it.
+Business owner. Brilliant operator. Loves the work. Drowning in everything around it.
 
 Not because she wasn't working hard enough. Because the systems — the calls, the follow-up, the scheduling, the reviews — were all dependent on a person being there, paying attention, remembering to act.
 
@@ -931,7 +962,7 @@ A system can.
 
 That's why LixenAI exists. Not to replace the human — to free the human to do the work only humans can do.
 
-**#LixenAI #FounderStory #WhyWeBuildThis #BusinessInfrastructure #MedSpa**
+**#LixenAI #FounderStory #WhyWeBuildThis #BusinessInfrastructure #OperationalAI**
 
 ---
 
@@ -952,21 +983,20 @@ That's why LixenAI exists. Not to replace the human — to free the human to do 
 
 **Interface Panel (centered, 880 × 480 px, Charcoal bg, 16 px radius, 1 px Electric Cyan border):**
 
-**Panel Header:** `AUTOMATED FOLLOW-UP SEQUENCE — Glow Medspa` — Inter SemiBold, 13 px, Slate
-**Contact row:** "Sara M. — New Prospect · Added 2 days ago"
+**Panel Header:** `AUTOMATED FOLLOW-UP SEQUENCE — Apex Partners`
+**Contact row:** "Jordan R. — New Prospect · Added 2 days ago"
 
 **Sequence Timeline (left-border vertical line in Lixen Blue, 2 px):**
-- Day 0 — `SENT` — "Hi Sara, we'd love to connect..."
+- Day 0 — `SENT` — "Hi Jordan, we'd love to connect..."
 - Day 1 — `SENT` — "Just following up on your inquiry..."
 - Day 3 — `SENT` — "We have availability this week..."
-- Day 5 — `OPENED` indicator — "Last chance to grab your consultation..."
+- Day 5 — `OPENED` — "Last chance to grab your consultation..."
 - Day 7 — `REPLIED ✓` — "Yes! I'd like to book Thursday at 3 PM"
 
-Status indicators: small colored dots — Slate (sent), Electric Cyan (opened), Growth Teal (replied)
+Status indicators: Slate (sent), Electric Cyan (opened), Growth Teal (replied)
 
-**Feature Pills (below panel, row of three):**
+**Feature Pills:**
 `MULTI-TOUCH` · `AI-PERSONALIZED` · `AUTO-STOPS ON REPLY`
-Style: 1 px Cyan border, Cyan text, transparent bg, 8 px radius, 11 px caps
 
 **Supporting Message (Inter Regular, 15 px, Slate):**
 > Runs in the background. Stops the moment a prospect engages. No one had to manage it.
@@ -994,7 +1024,7 @@ The moment a prospect replies, the sequence stops. A notification goes to the Sa
 
 Consistent follow-up. Zero manual effort. More conversations closed.
 
-**#LixenAI #FollowUpAutomation #SalesSequence #AIForSales #MedSpa**
+**#LixenAI #FollowUpAutomation #SalesSequence #AIForSales #BusinessAutomation**
 
 ---
 
@@ -1005,7 +1035,7 @@ Consistent follow-up. Zero manual effort. More conversations closed.
 
 ### Canvas Specification
 
-**Background:** Midnight (#071426) with a very subtle 1 px diagonal hatch at 3% opacity (fine lines, Deep Navy).
+**Background:** Midnight (#071426) with very subtle 1 px diagonal hatch at 3% opacity (fine lines, Deep Navy).
 
 **Category Label:** `THE FULL PICTURE` — Inter SemiBold, all caps, Slate, 12 px
 
@@ -1013,11 +1043,11 @@ Consistent follow-up. Zero manual effort. More conversations closed.
 > Every moving part.
 > Every assigned owner.
 
-**Layout:** Two-column grid (equal width), each column containing a stack of compact responsibility cards.
+**Layout:** Two-column grid (equal width).
 
 **Left Column — Sales Partner**
-Column header: `SALES PARTNER` — Inter SemiBold, 13 px, White, with a 2 px left-border Lixen Blue
-Cards (6 total, each 400 px wide × 56 px tall, Deep Navy bg, 16 px radius, 1 px Lixen Blue border, Inter Regular 14 px White):
+Column header: `SALES PARTNER` with 2 px left-border Lixen Blue
+Cards (6 total, Deep Navy bg, 16 px radius, 1 px Lixen Blue border, Inter Regular 14 px White):
 1. Prospecting and lead generation
 2. Discovery conversations
 3. Product demonstrations
@@ -1026,7 +1056,7 @@ Cards (6 total, each 400 px wide × 56 px tall, Deep Navy bg, 16 px radius, 1 px
 6. Ongoing client relationship
 
 **Right Column — LixenAI**
-Column header: `LIXENAI PLATFORM` — Inter SemiBold, 13 px, White, with a 2 px left-border Electric Cyan
+Column header: `LIXENAI PLATFORM` with 2 px left-border Electric Cyan
 Cards (6 total, 1 px Electric Cyan border):
 1. Platform deployment and setup
 2. AI workflow configuration
@@ -1035,7 +1065,7 @@ Cards (6 total, 1 px Electric Cyan border):
 5. Integrations and CRM sync
 6. Ongoing support and updates
 
-**Bottom row (spanning full width, Growth Teal border 1 px, Deep Navy bg, 24 px padding, centered text):**
+**Bottom row (full-width, Growth Teal border 1 px, Deep Navy bg, centered text):**
 (Inter SemiBold, 16 px, White) "When both sides do their job — the client wins every time."
 
 **Logo:** White wordmark, bottom-right
@@ -1058,22 +1088,20 @@ There is no grey zone. No task that belongs to both parties and therefore falls 
 
 That's intentional. The model only works when ownership is clean.
 
-When both sides execute — the client has a fully operational AI system AND a Sales Partner who actually understands their business.
-
 **#LixenAI #Accountability #SalesPartner #OperationalAI #BusinessOwnership**
 
 ---
 
-## Day 17 — Med-Spa Scenario (Missed Call Recovery — Dark)
+## Day 17 — Business Scenario (Missed Call — Dark)
 
-**Template:** T9 — Med-Spa Scenario
-**Visual Treatment:** Dark technology card (no photo — full dark, UI-driven)
+**Template:** T9 — Business Scenario
+**Visual Treatment:** Dark technology card (UI-driven)
 
 ### Canvas Specification
 
 **Background:** Midnight (#071426). Faint centered radial glow, Deep Navy, 500 px, 50% opacity.
 
-**Category Label:** `REAL SCENARIO · MED-SPA` — Inter SemiBold, all caps, Slate, 12 px
+**Category Label:** `REAL SCENARIO · SERVICE BUSINESS` — Inter SemiBold, all caps, Slate, 12 px
 
 **Primary Headline (Sora Bold, 48 px, White):**
 > One missed call.
@@ -1082,25 +1110,25 @@ When both sides execute — the client has a fully operational AI system AND a S
 
 **Scenario Narrative Panel (880 px wide, Deep Navy bg, 24 px radius, 1 px Electric Cyan border, 32 px padding):**
 
-**Panel Header:** `MONDAY · 11:47 AM · RADIANCE MED SPA`
+**Header:** `MONDAY · 11:47 AM · APEX CONSULTING`
 
 **Event Timeline:**
 - `11:47 AM` — `INBOUND CALL` — "New prospect — unrecognized number"
   → Status pill: `MISSED` in Alert Coral
 - `11:47 AM + 4s` — `AI RESPONSE TRIGGERED`
-  → Message preview: "Hi! You just reached Radiance Med Spa — we'd love to connect. Are you looking to book a consultation?"
+  → Message preview: "Hi! You just reached Apex Consulting — we'd love to connect. Are you looking to schedule a call?"
   → Status pill: `DELIVERED ✓` in Growth Teal
 - `11:49 AM` — `PROSPECT REPLIED`
   → "Yes! Can I come in Thursday?"
   → Status pill: `QUALIFIED` in Electric Cyan
-- `11:51 AM` — `APPOINTMENT BOOKED`
-  → "Thursday 2 PM · Consultation · Confirmed ✓"
+- `11:51 AM` — `MEETING BOOKED`
+  → "Thursday 2 PM · Discovery Call · Confirmed ✓"
   → Status pill: `BOOKED` in Growth Teal
 
-**Metrics row (below panel, three cards in a flex row):**
-- `4 seconds` — Response time — Slate label, White value
-- `1 missed call` — Recovered — Slate label, White value
-- `$0` — Manual effort — Slate label, Electric Cyan value
+**Metrics row (three cards in a flex row):**
+- `4 seconds` — Response time
+- `1 missed call` — Recovered
+- `$0` — Manual effort — Electric Cyan value
 
 **Logo:** White wordmark, bottom-right
 
@@ -1110,21 +1138,21 @@ When both sides execute — the client has a fully operational AI system AND a S
 
 Here's an exact scenario.
 
-Monday. 11:47 AM. Owner is in a treatment room. Phone rings. No answer.
+Monday. 11:47 AM. Owner is with a client. Phone rings. No answer.
 
-Old outcome: prospect hangs up, calls the next practice on Google.
+Old outcome: prospect hangs up, calls the next provider on Google.
 
 LixenAI outcome:
 
 4 seconds later, an AI-written SMS goes out. Personalized. On-brand.
 
-Prospect replies at 11:49. Appointment booked at 11:51.
+Prospect replies at 11:49. Meeting booked at 11:51.
 
-The entire sequence: 4 minutes. Manually done by the platform. No one touched it.
+The entire sequence: 4 minutes. Done by the platform. No one touched it.
 
-That's one lead. Multiply it by the dozens of missed calls a month and the math gets interesting.
+That's one lead. Multiply it by the missed calls a month and the math gets interesting.
 
-**#LixenAI #MissedCallRecovery #MedSpa #LeadConversion #AIAutomation**
+**#LixenAI #MissedCallRecovery #LeadConversion #AIAutomation #BusinessSystems**
 
 ---
 
@@ -1139,7 +1167,7 @@ That's one lead. Multiply it by the dozens of missed calls a month and the math 
 
 **Category Label:** `HONEST ANSWER` — Inter SemiBold, all caps, Slate, 12 px
 
-**Objection (Inter SemiBold, 20 px, Signal Violet, italic, 4 px left accent bar Violet):**
+**Objection (Inter SemiBold, 20 px, Signal Violet, italic, left accent bar):**
 > "How do I know this actually works?"
 
 **Headline (Sora Bold, 44 px, White):**
@@ -1152,7 +1180,7 @@ That's why we don't sell abstractions.
 
 Every Sales Partner walks a prospective client through a live system demonstration — real workflows, real interface, real scenarios.
 
-Missed call detected. AI response sent. Lead qualified. Appointment booked. All visible in sequence.
+Missed call detected. AI response sent. Lead qualified. Meeting booked. All visible in sequence.
 
 You see it work before you commit to anything.
 
@@ -1173,13 +1201,13 @@ The AI space is full of bold claims with no substance behind them. We understand
 
 Our answer: don't take our word for it.
 
-Every LixenAI Sales Partner runs a live demo — you watch the workflows execute in real time. Missed call triggers response. Lead enters sequence. Appointment books.
+Every LixenAI Sales Partner runs a live demo — you watch the workflows execute in real time. Missed call triggers response. Lead enters sequence. Meeting books.
 
 The proof is in the demonstration, not the deck.
 
 If you're evaluating this for your own business or as a Sales Partner opportunity — ask for a demo. That's what they're for.
 
-**#LixenAI #Transparency #ProductDemo #AIForBusiness #MedSpa**
+**#LixenAI #Transparency #ProductDemo #AIForBusiness #OperationalAI**
 
 ---
 
@@ -1203,7 +1231,6 @@ If you're evaluating this for your own business or as a Sales Partner opportunit
 **Workflow 01:** Missed Call Recovery
 **Headline:** Every call gets a response. Even when no one answers.
 **How it works:** Missed call detected → AI SMS sent in seconds → Prospect enters qualification flow
-**Visual:** Simple three-node flow diagram, Lixen Blue nodes, connecting lines
 
 ### Panel 3
 
@@ -1242,7 +1269,6 @@ If you're evaluating this for your own business or as a Sales Partner opportunit
 > Six workflows. Zero
 > manual effort. One system.
 **CTA (Inter SemiBold, Electric Cyan):** Learn more at LixenAI.com
-**Disclosure (if posted alongside recruitment):** *(Include standard disclosure)*
 
 ---
 
@@ -1261,7 +1287,7 @@ Swipe through to see how each one works — and what triggers it.
 
 This is what "operational AI" actually means. Not features. Infrastructure.
 
-**#LixenAI #AIWorkflows #BusinessAutomation #MedSpa #OperationalAI**
+**#LixenAI #AIWorkflows #BusinessAutomation #OperationalAI #GrowthBusiness**
 
 ---
 
@@ -1272,7 +1298,7 @@ This is what "operational AI" actually means. Not features. Infrastructure.
 
 ### Canvas Specification
 
-**Background:** Midnight (#071426). Subtle large circular arc (partial ring) in bottom-left corner, 600 px radius, Electric Cyan, 1 px, 10% opacity.
+**Background:** Midnight (#071426). Subtle large circular arc in bottom-left corner, 600 px radius, Electric Cyan, 1 px, 10% opacity.
 
 **Category Label:** `REPUTATION AUTOMATION` — Inter SemiBold, all caps, Growth Teal, 12 px
 
@@ -1287,11 +1313,11 @@ This is what "operational AI" actually means. Not features. Infrastructure.
 |---|---|---|---|
 | 01 | Lixen Blue | APPOINTMENT COMPLETED | System detects appointment status change |
 | 02 | Signal Violet | REVIEW TRIGGER FIRES | Optimally timed (1–2 hrs post-appointment) |
-| 03 | Electric Cyan | PERSONALIZED REQUEST SENT | "Hi Sara, we'd love your feedback on your visit today!" |
+| 03 | Electric Cyan | PERSONALIZED REQUEST SENT | "Hi Jordan, we'd love your feedback on today's session!" |
 | 04 | Growth Teal | REVIEW RECEIVED | Platform logs response and source |
 | 05 | Growth Teal (solid) | CRM UPDATED | Review score, platform, and date logged |
 
-**Result Callout (centered, below workflow, Glass panel):**
+**Result Callout (Glass panel, centered):**
 (Inter SemiBold, 16 px, White) "Consistent review requests = compounding reputation."
 (Inter Regular, 14 px, Slate) "No staff reminder required. No request gets forgotten."
 
@@ -1303,9 +1329,9 @@ This is what "operational AI" actually means. Not features. Infrastructure.
 
 Here's a revenue fact that gets overlooked:
 
-Google reviews directly affect inbound call volume for local health businesses.
+Online reviews directly affect inbound inquiry volume for local service businesses.
 
-Most med-spas don't have a review problem. They have a review-request problem.
+Most businesses don't have a review problem. They have a review-request problem.
 
 Clients would leave reviews — they just never get asked at the right moment.
 
@@ -1315,7 +1341,7 @@ The system doesn't forget. It doesn't feel awkward. It just asks.
 
 Over time, the rating climbs. The calls come in. The workflow pays for itself.
 
-**#LixenAI #ReviewAutomation #MedSpa #GoogleReviews #ReputationManagement**
+**#LixenAI #ReviewAutomation #OnlineReputation #BusinessAutomation #GrowthSystems**
 
 ---
 
@@ -1324,7 +1350,7 @@ Over time, the rating climbs. The calls come in. The workflow pays for itself.
 **Template:** Simple text + poll
 **Visual Treatment:** Minimal cloud-white card / LinkedIn native poll
 
-### Canvas Specification (background graphic for context — post as companion visual or standalone poll)
+### Canvas Specification
 
 **Background:** Cloud White (#F5F8FC)
 **Category Label:** `QUICK QUESTION`
@@ -1333,7 +1359,7 @@ Over time, the rating climbs. The calls come in. The workflow pays for itself.
 > follow-up problem
 > in your business?
 
-**Below headline — poll prompt text (Inter Regular, 17 px, Slate):**
+**Below headline (Inter Regular, 17 px, Slate):**
 Be honest. We're building the system to fix it.
 
 **Poll Options:**
@@ -1354,11 +1380,11 @@ What's the biggest follow-up challenge in your business?
 
 👇 Vote below
 
-Whether you're a med-spa owner, a sales professional, or a business operator — we built LixenAI around the answers to this exact question.
+Whether you're a business owner, a sales professional, or an operator — we built LixenAI around the answers to this exact question.
 
 Drop a comment if you want to add more context. We're listening.
 
-**#LixenAI #FollowUp #BusinessPoll #SalesOps #MedSpa**
+**#LixenAI #FollowUp #BusinessPoll #SalesOps #B2BBusiness**
 
 ---
 
@@ -1379,7 +1405,7 @@ Drop a comment if you want to add more context. We're listening.
 > Scalable. Built
 > around your close rate.
 
-**Body (Inter Regular, 17 px, Charcoal, inside white panel, 1 px border #E5E9F0, 16 px radius, 24 px padding, 1.75 lh):**
+**Body (Inter Regular, 17 px, Charcoal, white panel, 16 px radius, 1 px border #E5E9F0, 24 px padding, 1.75 lh):**
 
 LixenAI Sales Partners earn based on what they close — not on hours worked.
 
@@ -1395,7 +1421,7 @@ We give you the product, the training, the demo environment, and the infrastruct
 
 **Tag Pills:** `PERFORMANCE-BASED` · `RECURRING STRUCTURE` · `NO PRODUCT BUILD`
 
-**Disclosure (Inter Regular, 11 px, Slate, bottom of card):**
+**Disclosure (Inter Regular, 11 px, Slate):**
 *Independent, performance-based Sales Partner opportunity. Not salaried employment. Income is not guaranteed.*
 
 **Logo:** Charcoal wordmark, bottom-right
@@ -1431,7 +1457,7 @@ Link in comments.
 
 ### Canvas Specification
 
-**Background:** Midnight (#071426). Large abstract geometric form — two overlapping thin rectangles, rotated 15 degrees, positioned upper-right, each 800 × 4 px, one in Lixen Blue at 20% opacity, one in Electric Cyan at 12% opacity.
+**Background:** Midnight (#071426). Two overlapping thin rectangles, rotated 15 degrees, upper-right, each 800 × 4 px, one Lixen Blue at 20% opacity, one Electric Cyan at 12% opacity.
 
 **Category Label:** `INFRASTRUCTURE THINKING` — Inter SemiBold, all caps, Slate, 12 px
 
@@ -1442,7 +1468,7 @@ Link in comments.
 
 **Treatment:** "Infinite reach." in Lixen Blue → Electric Cyan gradient. Other lines White.
 
-**Visual Element:** Centered below headline — three concentric arc segments, each 2 px, colors Lixen Blue / Electric Cyan / Growth Teal, spaced 16 px apart, 200 px radius innermost. Like a signal or broadcast icon. Pure graphic, no text labels.
+**Visual Element:** Three concentric arc segments, each 2 px, colors Lixen Blue / Electric Cyan / Growth Teal, spaced 16 px apart, 200 px radius innermost. Signal / broadcast graphic, no text labels.
 
 **Supporting Message (Inter Regular, 17 px, Slate, centered):**
 > LixenAI scales with your Sales Partner network, not with your headcount.
@@ -1475,16 +1501,16 @@ Build the network. The system keeps up.
 
 ## Day 24 — Photography (Discovery Call)
 
-**Template:** T9 — Med-Spa Scenario (Photography)
+**Template:** T9 — Business Scenario (Photography)
 **Visual Treatment:** Photography-led
 
 ### Canvas Specification
 
 **Photography Direction:**
-- Scene: A Sales Partner on a video call — laptop open on a clean desk, the screen showing a simplified CRM or dashboard interface (not fabricated — could be blurred or partially obscured)
-- Subject: Confident, approachable, well-lit — making a point or gesturing slightly
-- Environment: Minimal home office or professional space — clean, organized, no clutter
-- Mood: This is a professional selling a premium product. Not pushy. Consultative.
+- Scene: A Sales Partner on a video call — laptop open on a clean desk, attentive posture, mid-conversation
+- Subject: Confident, approachable, professional — consultative, not pitchy
+- Environment: Minimal professional workspace — clean, no clutter, neutral tones
+- Mood: This is a trusted advisor having a real business conversation
 
 **Image Treatment:**
 - Full-bleed
@@ -1493,7 +1519,7 @@ Build the network. The system keeps up.
 
 **UI Notification Overlay (bottom-left, glass card):**
 - `● DISCOVERY CALL IN PROGRESS` — Electric Cyan, 11 px
-- "Glow Medspa — Sara M." — White, 14 px SemiBold
+- "Clearview Consulting — Alex S." — White, 14 px SemiBold
 - "Pipeline: QUALIFIED · Next: Proposal" — Slate, 12 px
 
 **Category Label (top-left):** `DISCOVERY CALL · SALES PARTNER` — all caps, Slate, 11 px
@@ -1516,9 +1542,9 @@ The discovery call is where everything starts.
 
 Not with a pitch. With a question.
 
-"Walk me through what happens when a new lead calls your practice after hours."
+"Walk me through what happens when a new lead reaches out after hours."
 
-Usually there's a pause. Then: "We miss it. Or my front desk person tries to call back the next day."
+Usually there's a pause. Then: "We miss it. Or someone tries to follow up the next day."
 
 That's the opening.
 
@@ -1528,7 +1554,7 @@ LixenAI Sales Partners are trained to run discovery as a diagnostic, not a scrip
 
 Find the gap. Show the system. Close the solution.
 
-**#LixenAI #DiscoveryCall #ConsultativeSales #SalesPartner #MedSpa**
+**#LixenAI #DiscoveryCall #ConsultativeSales #SalesPartner #B2BSales**
 
 ---
 
@@ -1539,7 +1565,7 @@ Find the gap. Show the system. Close the solution.
 
 ### Canvas Specification
 
-**Background:** Deep Navy (#0C2138). Faint horizontal banding — alternating Deep Navy and slightly lighter tint (#0E2845) at 40 px intervals, 3% opacity.
+**Background:** Deep Navy (#0C2138). Faint horizontal banding — alternating Deep Navy and #0E2845 at 40 px intervals, 3% opacity.
 
 **Category Label:** `THE REVENUE LEAK` — Inter SemiBold, all caps, Alert Coral, 12 px
 
@@ -1548,7 +1574,7 @@ Find the gap. Show the system. Close the solution.
 > management is a
 > leak, not a process.
 
-**Two-panel comparison (stacked vertically, each full-width, 16 px radius):**
+**Two-panel comparison (stacked vertically, full-width, 16 px radius):**
 
 **Panel A — MANUAL PROCESS**
 Background: rgba(255,107,107,0.08), border 1 px Alert Coral
@@ -1591,7 +1617,7 @@ The result isn't just efficiency — it's compounding. Every lead handled. Every
 
 The leak gets sealed.
 
-**#LixenAI #BusinessSystems #RevenueLeaks #MedSpa #AutomationROI**
+**#LixenAI #BusinessSystems #RevenueLeaks #AutomationROI #GrowthBusiness**
 
 ---
 
@@ -1603,31 +1629,29 @@ The leak gets sealed.
 ### Canvas Specification
 
 **Photography Direction (upper 40% of canvas):**
-- Subject: Med-spa owner standing at a front desk, glancing at a tablet
+- Subject: Business owner or operator at a desk, glancing at a laptop or tablet
 - Expression: Calm, in control — "I know what's happening in my business"
-- Lighting: Warm, premium med-spa interior — white marble, soft light
+- Environment: Modern office, clean surface, professional lighting
 
 **Photo Treatment:**
 - Upper 40%: photo
 - Gradient: Photo → Deep Navy (#0C2138) at 50% height
 
-**Lower 60%: Product Interface Panel**
-Canvas: Deep Navy bg
-Frame: 880 px wide, 16 px radius, 1 px Lixen Blue border, Charcoal interior
+**Lower 60% — Product Interface Panel (880 px wide, 16 px radius, 1 px Lixen Blue border, Charcoal interior):**
 
 **Interface Content:**
-Dashboard panel labeled `PIPELINE OVERVIEW — RADIANCE MED SPA`
-Four stage columns with deal counts:
+Dashboard panel: `PIPELINE OVERVIEW — CLEARVIEW CONSULTING`
+Four stage columns:
 - `NEW LEADS` — 8 — Lixen Blue
 - `QUALIFIED` — 4 — Electric Cyan
 - `PROPOSAL` — 2 — Signal Violet
 - `CLOSED` — 11 this month — Growth Teal
 
-Compact deal cards beneath each column (2 visible per column, Deep Navy bg, 12 px radius, name + status + last action).
+Compact deal cards beneath each column (2 visible, Deep Navy bg, 12 px radius, name + status + last action).
 
 **Category Label (photo zone, top-left):** `PIPELINE INTELLIGENCE` — all caps, Slate, 11 px
 
-**Headline (above interface panel, Sora SemiBold, 36 px, White):**
+**Headline (above interface, Sora SemiBold, 36 px, White):**
 > Every deal. Every stage.
 > Always live.
 
@@ -1649,20 +1673,20 @@ No one inputs the data. The system does.
 
 That's not a nice-to-have. That's what running a business on information looks like.
 
-**#LixenAI #PipelineManagement #CRM #MedSpa #BusinessIntelligence**
+**#LixenAI #PipelineManagement #CRM #BusinessIntelligence #AIForBusiness**
 
 ---
 
-## Day 27 — Med-Spa Scenario (Appointment Booking)
+## Day 27 — Business Scenario (After-Hours Booking)
 
-**Template:** T9 — Med-Spa Scenario
-**Visual Treatment:** Dark technology card (UI-driven, no photo)
+**Template:** T9 — Business Scenario
+**Visual Treatment:** Dark technology card (UI-driven)
 
 ### Canvas Specification
 
-**Background:** Midnight (#071426). Very faint circular grid emanating from center-bottom, Electric Cyan, 1 px, 8% opacity, 64 px spacing.
+**Background:** Midnight (#071426). Very faint circular grid from center-bottom, Electric Cyan, 1 px, 8% opacity, 64 px spacing.
 
-**Category Label:** `BOOKING AUTOMATION · MED-SPA` — Inter SemiBold, all caps, Slate, 12 px
+**Category Label:** `AFTER-HOURS SCENARIO` — Inter SemiBold, all caps, Slate, 12 px
 
 **Primary Headline (Sora Bold, 48 px, White):**
 > A prospect became
@@ -1671,24 +1695,24 @@ That's not a nice-to-have. That's what running a business on information looks l
 
 **Scenario Flow Panel (880 × 480 px, Deep Navy, 24 px radius, 1 px Electric Cyan border):**
 
-**Header:** `WEDNESDAY · 6:43 PM · GLOW MEDSPA`
+**Header:** `WEDNESDAY · 6:43 PM · SUMMIT GROUP`
 
-**Conversation Thread (chat-style, alternating sides):**
+**Conversation Thread (chat-style):**
 
 Prospect (left, Slate bubble):
-"Hey, I saw your Instagram. Do you do lip filler?"
+"Hey, I saw your ad. Can we set up a time to talk?"
 
 LixenAI System (right, Lixen Blue bubble):
-"We do! Dr. Chen specializes in natural lip enhancement. We have openings this week — would Thursday at 2 PM or Friday at 11 AM work for you?"
+"Absolutely! We have openings this week — would Thursday at 2 PM or Friday at 11 AM work for you?"
 
 Prospect (left):
 "Thursday at 2 works perfectly!"
 
 LixenAI System (right):
-"Perfect! I've got you down for Thursday at 2 PM with Dr. Chen. You'll receive a confirmation and reminder. See you then! 🙂"
+"Perfect! I've got you down for Thursday at 2 PM. You'll receive a confirmation shortly. Looking forward to connecting!"
 
-**Status Row below chat:**
-`APPOINTMENT BOOKED ✓` — Growth Teal pill
+**Status Row:**
+`MEETING BOOKED ✓` — Growth Teal pill
 `CRM UPDATED` — Electric Cyan pill
 `CONFIRMATION SENT` — Lixen Blue pill
 
@@ -1703,23 +1727,23 @@ LixenAI System (right):
 
 Wednesday evening. 6:43 PM.
 
-The practice is closed. The owner is at dinner.
+The office is closed. The owner is at dinner.
 
-A prospect messages from Instagram about lip filler.
+A prospect messages from an ad about scheduling a call.
 
-LixenAI handles the conversation, presents available times, books the appointment, sends the confirmation, and updates the CRM.
+LixenAI handles the conversation, presents available times, books the meeting, sends the confirmation, and updates the CRM.
 
-By 6:51 PM, an appointment that didn't exist has been scheduled, confirmed, and logged.
+By 6:51 PM, a meeting that didn't exist has been scheduled, confirmed, and logged.
 
 No human intervention. No after-hours staff. No dropped lead.
 
 That's what a business running on systems looks like after hours.
 
-**#LixenAI #AppointmentBooking #MedSpa #AIAutomation #AfterHoursLeads**
+**#LixenAI #AfterHoursLeads #AIAutomation #BusinessSystems #LeadConversion**
 
 ---
 
-## Day 28 — Objection Response (What Do I Need to Start?)
+## Day 28 — Objection Response (What Do I Need?)
 
 **Template:** T6 — Objection Response
 **Visual Treatment:** Dark technology card
@@ -1740,15 +1764,15 @@ That's what a business running on systems looks like after hours.
 **Three-card row (each 270 × 120 px, Deep Navy bg, 16 px radius, 1 px border, centered):**
 
 Card 1 — Border: Lixen Blue
-Label: `WHAT YOU NEED` in Lixen Blue, 11 px caps
+Label: `WHAT YOU NEED` in Lixen Blue, 11 px
 Content: Strong consultative communication skills
 
 Card 2 — Border: Electric Cyan
-Label: `WHAT HELPS` in Cyan, 11 px caps
+Label: `WHAT HELPS` in Cyan, 11 px
 Content: B2B sales or business development background
 
 Card 3 — Border: Signal Violet
-Label: `WHAT WE PROVIDE` in Violet, 11 px caps
+Label: `WHAT WE PROVIDE` in Violet, 11 px
 Content: Product training, demo environment, full infrastructure
 
 **Body (Inter Regular, 16 px, Cloud White, 1.75 lh, below cards):**
@@ -1760,7 +1784,8 @@ We handle everything after the handoff.
 
 **CTA (Inter SemiBold, Electric Cyan):** Applications open — link in bio
 
-**Disclosure:** *Independent, performance-based Sales Partner opportunity. Not salaried employment. Income is not guaranteed.*
+**Disclosure:**
+*Independent, performance-based Sales Partner opportunity. Not salaried employment. Income is not guaranteed.*
 
 **Logo:** White wordmark, bottom-right
 
@@ -1811,18 +1836,18 @@ If that's you — we should talk.
 
 Items (Inter Medium, 17 px, Charcoal, 1.8 lh, bullet: blue dash):
 
-— Has sold B2B products or services, or worked in practice development, health-business consulting, or a similar field
+— Has sold B2B products or services, or worked in business development or consulting
 
 — Understands that a longer consultative sale leads to a more committed client
 
-— Is comfortable presenting to business owners, not just influencing individual consumers
+— Is comfortable presenting to business owners and operators
 
 — Wants income that grows with their pipeline, not a salary ceiling
 
 — Is looking for a product they can believe in — not a gimmick
 
 **NOT a fit for:**
-(Inter Regular, 15 px, Slate, same panel, divider above)
+(Inter Regular, 15 px, Slate, divider above)
 
 — People looking for passive income without active sales
 — Those who want a guaranteed salary from day one
@@ -1856,32 +1881,29 @@ No pressure. No hype. If the description fits how you already operate — let's 
 
 *Independent, performance-based Sales Partner opportunity. Not salaried employment. Income is not guaranteed.*
 
-**#LixenAI #SalesPartner #SalesOpportunity #B2BSales #MedSpa**
+**#LixenAI #SalesPartner #SalesOpportunity #B2BSales #ConsultativeSales**
 
 ---
 
-## Day 30 — Campaign Closer (Photography + Brand Statement)
+## Day 30 — Campaign Closer
 
 **Template:** T1 — Brand Statement
-**Visual Treatment:** Photography-led with headline overlay
+**Visual Treatment:** Photography-led
 
 ### Canvas Specification
 
 **Photography Direction:**
-- Scene: Premium med-spa interior — reception area, clean lines, soft natural light, white marble countertop, orchid in background
-- No people. The space itself carries the quality signal.
-- Mood: Aspirational but grounded. This is what a thriving practice looks like.
-- NOT stock-photo generic — specifically med-spa premium aesthetic.
+- Scene: A clean, well-appointed professional office — organized desk, warm ambient lighting, a view through a window to a city or green exterior
+- No people. The space carries the quality signal.
+- Mood: This is what a thriving, organized business looks like. Premium but grounded.
+- NOT a stock-photo generic office — should feel like a real, considered workspace.
 
 **Image Treatment:**
 - Full-bleed photo
 - Gradient overlay: transparent from top → Midnight (#071426) at 60% height, full opacity by 80%
 
-**Top Zone (above gradient threshold):**
+**Top Zone:**
 - Category Label: `30 DAYS · LIXENAI` — Inter SemiBold, all caps, White at 70%, 11 px, top-left
-
-**Mid-Zone (gradient transition):**
-Nothing — let the photo breathe.
 
 **Lower 40% — Typography Zone:**
 
@@ -1890,7 +1912,7 @@ Nothing — let the photo breathe.
 > LixenAI builds,
 > deploys, and fulfills.
 
-**Treatment:** "LixenAI" on line 2 — Lixen Blue → Electric Cyan gradient. Callback to Day 1.
+**Treatment:** "LixenAI" in Lixen Blue → Electric Cyan gradient — callback to Day 1.
 
 **Supporting Message (Inter Regular, 18 px, Cloud White at 80%):**
 > The system is live. The partners are building. The business is growing.
@@ -1916,7 +1938,7 @@ If you followed along: thank you. If you're just finding us: start from Day 1.
 
 Here's where we landed:
 
-**LixenAI is an operating system for med-spa businesses.**
+**LixenAI is an operating system for service businesses.**
 Sales Partners handle the front-of-house: prospecting, demonstrations, relationships, and close.
 LixenAI handles everything behind it: deployment, automation, AI workflows, CRM, support, and optimization.
 
@@ -1928,7 +1950,7 @@ If you're a Sales Partner looking for a product worth selling — or a business 
 
 LixenAI.com
 
-**#LixenAI #OperationalAI #SalesPartner #MedSpa #AIForBusiness #CampaignClose**
+**#LixenAI #OperationalAI #SalesPartner #AIForBusiness #BusinessSystems #CampaignClose**
 
 ---
 
@@ -1985,49 +2007,12 @@ Padding: 4 px 10 px
 Border-radius: 20 px
 Font: Inter SemiBold, 11 px, ALL CAPS
 Colors by state:
-  - Active / Sent: Lixen Blue bg at 20%, Lixen Blue text
-  - Qualified: Electric Cyan bg at 15%, Cyan text
-  - Booked / Success: Growth Teal bg at 15%, Teal text
-  - Missed / Alert: Alert Coral bg at 15%, Coral text
-  - Pending: Slate bg at 20%, Slate text
+  Active / Sent:  Lixen Blue bg at 20%,   Lixen Blue text
+  Qualified:      Electric Cyan bg at 15%, Cyan text
+  Booked/Success: Growth Teal bg at 15%,  Teal text
+  Missed/Alert:   Alert Coral bg at 15%,  Coral text
+  Pending:        Slate bg at 20%,         Slate text
 ```
-
----
-
-## 30-Day Editorial Calendar
-
-| Day | Template | Treatment | Topic |
-|---|---|---|---|
-| 1 | T1 Brand Statement | Dark | Campaign launch — core promise |
-| 2 | T2 Responsibility Split | Dark | Partner vs LixenAI roles (overview) |
-| 3 | T4 Pain vs System | Light | Duct tape vs systems |
-| 4 | T3 Workflow | Dark | Lead to appointment flow |
-| 5 | T9 Scenario | Photo | Missed call — reception scene |
-| 6 | T5 Product Feature | Screenshot | Missed call recovery UI |
-| 7 | T10 Carousel | Light | 6 things LixenAI handles |
-| 8 | T1 Brand Statement | Dark | Build once, deploy everywhere |
-| 9 | T6 Objection | Dark | "Is this just a chatbot?" |
-| 10 | T8 Recruitment | Light | What a Sales Partner does + Disclosure |
-| 11 | T3 Workflow | Dark | Pipeline intelligence |
-| 12 | T4 Pain vs System | Light | Hiring vs deploying |
-| 13 | T9 Scenario | Photo | Sales professional on a call |
-| 14 | T7 Founder | Light | Why we built LixenAI |
-| 15 | T5 Product Feature | Screenshot | AI follow-up sequence UI |
-| 16 | T2 Responsibility Split | Dark | Full detailed breakdown |
-| 17 | T9 Scenario | Dark | Missed call — step-by-step |
-| 18 | T6 Objection | Dark | "How do I know it works?" |
-| 19 | T10 Carousel | Light | The 6 workflows (full series) |
-| 20 | T3 Workflow | Dark | Review request automation |
-| 21 | Poll | Simple | Biggest follow-up challenge? |
-| 22 | T8 Recruitment | Light | Income model + Disclosure |
-| 23 | T1 Brand Statement | Dark | One system, infinite reach |
-| 24 | T9 Scenario | Photo | Discovery call moment |
-| 25 | T4 Pain vs System | Dark | Manual chase vs pipeline |
-| 26 | T5 Product Feature | Screenshot/Photo | Pipeline view UI |
-| 27 | T9 Scenario | Dark | After-hours booking automation |
-| 28 | T6 Objection | Dark | "What do I need to start?" + Disclosure |
-| 29 | T8 Recruitment | Light | Who thrives as a partner + Disclosure |
-| 30 | T1 Brand Statement | Photo | Campaign close — the full promise |
 
 ---
 
@@ -2037,25 +2022,25 @@ Posts requiring the recruitment disclosure (verbatim):
 *"Independent, performance-based Sales Partner opportunity. Not salaried employment. Income is not guaranteed."*
 
 Required on: **Days 10, 22, 28, 29**
-Recommended on: **Day 7 panel 7 (if carousel includes partner CTA)**
 
 ---
 
 ## Hashtag Strategy
 
-**Brand anchors (every post):** #LixenAI
+**Brand anchor (every post):** #LixenAI
 
 **Operational AI posts:** #OperationalAI #AIForBusiness #BusinessAutomation
 
-**Med-spa vertical:** #MedSpa #MedSpaTech #MedSpaMarketing
+**Growth / B2B:** #GrowthBusiness #B2BBusiness #BusinessSystems
 
-**Sales Partner posts:** #SalesPartner #B2BSales #SalesOpportunity
+**Sales Partner posts:** #SalesPartner #B2BSales #SalesOpportunity #ConsultativeSales
 
-**Product posts:** #AIWorkflows #CRM #BusinessSystems
+**Product posts:** #AIWorkflows #CRM #BusinessIntelligence
 
 **Rotate 3–5 per post. Never exceed 7.**
 
 ---
 
 *End of Production Brief — LixenAI 30-Day LinkedIn Visual Campaign*
-*Document version: 1.0 — Ready for designer handoff*
+*Document version: 2.0 — Industry-agnostic B2B positioning*
+*Ready for designer handoff*
